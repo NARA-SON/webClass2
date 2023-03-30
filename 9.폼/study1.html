@@ -15,6 +15,9 @@
   <p>label 태그는 이름표태그로 사용하며 사용자가 입력하는 입력박스에 대한 이름을 달아줄 때 사용한다.</p>
   <p>label태그와 input태그를 서로 연결하기 위해서는 input태그의 id값을 label태그의 for속성에 그대로 적용한다. - 홈페이지의 사용 편의를 위해 자주 사용하는 패턴</p>
   <p>label 태그가 디자인적으로 보이지 않더라도 실제로 html태그 label태그는 구성해야하며 css에서 안보이게 처리하는 방법을 사용한다.</p>
+  <p>input type속성이 radio인 경우 select 태그와 같이 제한된 내용을 입력하게끔 유도할 때 사용하며, radio버튼의 name속성 값을 동일하게 하면 여러개의 radio버튼 중 1개만 선택되게
+    할 수 있다.</p>
+  <p>input type="text" 태그의 경우는 짧은 한 줄의 텍스트를 입력시킬 때 사용하며, textarea태그는 장문의 텍스트를 입력시킬 때 사용한다.</p>
   <hr>
   <form action="#" method="post">
     <fieldset>
@@ -30,10 +33,10 @@
     </fieldset>
     <fieldset>
       <legend>개인정보</legend>
-      <label for="user_nm">이름:</label>
+      <label for="user_nm">이름 :</label>
       <input type="text" id="user_nm">
       <br>
-      <label for="user_bd">생년월일:</label>
+      <label for="user_bd">생년월일 :</label>
       <input type="number" id="user_bd" placeholder="년">
       <select>
         <option>월</option>
@@ -51,7 +54,34 @@
         <option>12</option>
       </select>
       <input type="number" placeholder="일">
+      <br>
+      <label>성별 :</label>
+      <input type="radio" id="woman" name="user_gen">
+      <label for="woman">여자</label>
+      <input type="radio" id="man" name="user_gen">
+      <label for="man">남자</label>
+      <input type="radio" id="no_select" name="user_gen">
+      <label for="no_select">선택안함</label>
+      <!-- <select id="user_gd">
+        <option>성별</option>
+        <option>남자</option>
+        <option>여자</option>
+        <option>선택 안함</option>
+      </select> -->
+      <br>
+      <label>취미 :</label>
+      <input type="checkbox" id="like1">
+      <label for="like1">가재키우기</label>
+      <input type="checkbox" id="like2">
+      <label for="like2">열대어키우기</label>
+      <input type="checkbox" id="like3">
+      <label for="like3">고양이키우기</label>
+      <br>
+      <label for="user_pr">자기소개 :</label>
+      <textarea id="user_pr" placeholder="장문의 자기소개글"></textarea>
     </fieldset>
+    <input type="submit" value="회원가입">
+    <input type="reset" value="다시작성">
   </form>
 </body>
 
