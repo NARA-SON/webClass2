@@ -41,6 +41,7 @@ h1 {
 /*
 line-height 글씨를 감싸는 보이지 않는 라인의 높이를 의미하며, 기본적으로 글씨의 크기에 비례하여 120% 비율로 설정되어있다. %단위는 단위없이 정수로 소수점과 함께 사용하여 표현할 수 있다.
 232% -> 2.32
+%가 아니라 px로 입력해줄 수도 있다.
  */
 .e {
   font-family: dotum, "돋움", sans-serif, cursive;
@@ -77,8 +78,11 @@ linethrough -> 취소선
 }
 
 .j {
-  word-break: keep-all;
+  word-break: break-all;
 }
+
+/* keep-all 단어를 쪼개지 않는 것
+break-all 단어를 쪼개는 것 */
 
 .k {
   white-space: nowrap;
@@ -86,7 +90,7 @@ linethrough -> 취소선
 
 /* normal(기본값) / nowrap(줄바꿈허용X) */
 .l {
-  text-align: center;
+  text-align: justify;
 }
 
 /* left(기본값)/right/center/justify(양쪽정렬-왼쪽과 오른쪽 가장자리 라인에 텍스트를 맞추는 것을 우선적으로 처리함) */
@@ -96,12 +100,14 @@ linethrough -> 취소선
 
 /* 
 uppercase(대문자로변형) / lowercase(소문자) / capitalize(앞글자만 대문자) */
+
 .p1 {
-  font-size: 24px;
+  /* font-size: 24px;
   font-weight: bold;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
-  line-height: 2;
+  line-height: 2; */
+
   /* 위 다섯 줄을 아래 한 줄로 표현할 수 있다. (순서 중요!) */
   font: italic bold 24px / 2 'Times New Roman',
     Times, serif;
