@@ -23,3 +23,8 @@ h3 {
 blockquote {
   text-align: center;
 }
+
+.content1 {
+  width: 1000px;
+  margin: 0 auto;
+}
