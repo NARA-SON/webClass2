@@ -1,0 +1,17 @@
+opacity:0.2;
+font-size:70px;
+font-weight:bold;
+color:blue;
+text-decoration:underline;
+background:darkblue;
+
+관계선택자
+띄어쓰기 : ~안에
+> : ~안 자식 중에서
++ : 다음형제 하나만
+~ : 다음형제 여러개
+
+<list 태그 속성>
+nth-of-type(숫자) : 
+last-of-type : 마지막 순서 지정
+first-of-type : 첫번째 순서 지정
