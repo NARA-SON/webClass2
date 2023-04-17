@@ -93,7 +93,8 @@ font-style:italic;       글씨스타일
 font-weight:bold;     글씨굵기
    *normal(기본) / lighter(얇게) / bold(두껍게) / 100~900 수치가능
 
-font-size:70px; / 3.5rem; / 글씨크기
+font-size:70px; / 3.5rem; /       글씨크기
+   *inherit;  => 상속받게하겠다.
 
 line-height: 2;     글씨행간
    *기본 120%(=1.2) / % 또는 소수점 또는 px입력가능
@@ -189,14 +190,56 @@ TOP RIGHT/BOTTOM LEFT;
 TOP RIGHT BOTTOM LEFT;
 50px 100px 150px 200px;
 
+====================================
 ■overflow속성■ (흘러넘친거 처리할때)
 overflow:hidden; 안보이게
 overflow:scroll; 스크롤바
 overflow:auto; 자동스크롤바
 overflow:visible; 기본값, 그대로 보여주기
 
+====================================
 ■background속성■
-background-color(transparent)   색상
-background-image(none)          이미지
-background-repeat(repeat)       반복속성제어
-background-position(0 0)        좌표제어
+background-color:transparent;(기본)   색상
+
+background-image:none;(기본)          이미지
+   *background-image:url("경로")
+   *background-image:linear-gradient(45deg,red,blue);   선형그라데이션
+   *background-image:radial-gradient(red,blue);    원형그라데이션
+
+background-repeat:repeat;(기본)       반복속성제어
+   *background-repeat:no-repeat;       반복하지않는다.
+   *background-repeat-x:repeat;        가로사이즈만 반복
+   *background-repeat-y:repeat;        세로사이즈만 반복
+
+background-position:x y;(기본)        좌표제어
+   *background-position-x:100px;
+   *background-position-y:100px;
+   *(left/right/top/bottom/center)
+
+background-size:(x) (y);
+   *px, %, auto
+- background-size:contain;   => 최대한 가득 메꾸는(이미지유지)
+- background-size:cover;     => 빈틈없이 가득 메꾸는(잘려나감)
+
+calc(100% - 100px) calc(100% - 50px);
+-, + 띄어쓰기 필수 / 나누기 곱하기는 띄어쓰기 안해도 됨 
+
+색상 background-color: pink;
+이미지 background-image: url(../img/sudal.jpg);
+반복 background-repeat: no-repeat;
+x축 background-position-x:100px;
+y축 background-position-y:100px;
+통합 background-position: 100px 100px;
+=> background: pink url(../img/sudal.jpg) no-repeat 100px 100px;
+
+background-image: url(../img/sudal.jpg), url(../img/sudal.jpg)
+background-repeat: no-repeat, no-repeat;
+background-position: 0 0, 100% 100%;
+=> background: url(../img/sudal.jpg) no-repeat 0 0, url(../img/sudal.jpg) no-repeat 100% 100%
+- (콤마)를 사용해서 배경이미지 2개이상 넣어줄 수 있다.
+
+background-blend-mode:hue;    레이어효과
+  *exclusion;
+
+background-attachment:fixed;   배경고정
+   *기본값은 scroll;
