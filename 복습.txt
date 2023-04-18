@@ -92,6 +92,7 @@ font-style:italic;       글씨스타일
 
 font-weight:bold;     글씨굵기
    *normal(기본) / lighter(얇게) / bold(두껍게) / 100~900 수치가능
+    400이 기본값
 
 font-size:70px; / 3.5rem; /       글씨크기
    *inherit;  => 상속받게하겠다.
@@ -139,6 +140,19 @@ white-space:nowrap;      강제로 한줄나열(줄바꿈불가)
 
 rem;    => html에 적용된 글씨크기
 em;     => 부모태그에 적용된 글씨크기
+
+■폰트등록방법■
+<<웹폰트가 아닌경우>>
+1. 폰트를 다운받고, 폰트폴더를 만들어 파일을 넣어준다.
+2. CSS 파일에 폰트를 등록한다.
+   @font-face {
+     font-family: 폰트이름지정; (한글과 띄어쓰기를 넣으려면 ""안에 넣어준다.)
+     src: url("폰트파일경로"); }
+3. 사용할 곳에 font-family:속성을 넣어준다.
+
+<<웹폰트인 경우>>
+1. 웹상의 폰트코드를 복사하고, html헤드 안에 넣어준다.
+
 
 
 ■관계선택자■
@@ -239,7 +253,33 @@ background-position: 0 0, 100% 100%;
 - (콤마)를 사용해서 배경이미지 2개이상 넣어줄 수 있다.
 
 background-blend-mode:hue;    레이어효과
-  *exclusion;
+  *exclusion; 등등
 
 background-attachment:fixed;   배경고정
    *기본값은 scroll;
+
+■CSS작성 순서■
+1. RESET
+*{padding:0; margin:0}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+a{text-decoration:none; color:inherit;}
+strong,b{font-weight:normal;}
+i,em,address{font-style:normal;}
+
+2. COMMON STYLE(상속스타일)
+html{}
+@font-face{}
+
+3. LAYOUT (크기, 배치)
+4. DETAIL
+
+
+
+
+==============
+/* 1.RESET */
+*{padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: normal;}
+b, strong{font-weight:normal;}
+i,em,address {font-style: normal;}
+a {text-decoration: none; color: inherit;}
