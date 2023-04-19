@@ -186,14 +186,14 @@
 
 .box5>section {
   font-size: 5rem;
-  float: right;
+  float: left;
   width: calc((100% - 40px)/3);
 }
 
 .box5 .s1 {
   background: darkred;
   height: 420px;
-  float: left;
+  margin-right:20px;
 }
 
 .box5 .s2 {
@@ -201,6 +201,7 @@
   height: 200px;
   margin-left: 20px;
   margin-bottom: 20px;
+  float:right;
 }
 
 .box5 .s3 {
@@ -211,6 +212,7 @@
 .box5 .s4 {
   background: darkorange;
   height: 200px;
+  float:right;
 }
 
 .box5:after {

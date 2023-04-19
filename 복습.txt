@@ -233,7 +233,7 @@ background-position:x y;(기본)        좌표제어
 
 background-size:(x) (y);
    *px, %, auto
-- background-size:contain;   => 최대한 가득 메꾸는(이미지유지)
+- background-size:contain;   => 최대한 가득 메꾸는(비율유지)
 - background-size:cover;     => 빈틈없이 가득 메꾸는(잘려나감)
 
 calc(100% - 100px) calc(100% - 50px);
