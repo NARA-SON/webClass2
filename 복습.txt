@@ -9,7 +9,7 @@
 
 ■a태그 속성■
 <a href="상대경로 또는 절대경로" target="_blank" title="클릭시 네이버 홈페이지로 이동한다">페이지로 바로가기</a>
-href="#title" 책갈피 기능 - title 아이디가 있는곳으로 이동~
+href="#title" 책갈피 기능 - title 아이디가 있는곳으로 이동~ ★★★★★
 target="_blank" 새 창으로 창을 띄워주는 속성
 title="메세지"  링크에 마우스를 대면 나오는 메모창
 tel="0100000000" 전화로 연결됨
@@ -170,6 +170,7 @@ first-of-type : 첫번째 순서 지정
 ■display태그의 형태■
 display:block;    부모태그만큼의 너비(박스)
 display:inline;    라인(줄바꿈불가)
+    *inline 여부를 확인하기 위해서는 너비를 조정해보고, 조정이 안된다면 inline이다.
 display:inline-block;     나란히 배치 가능, 사이즈 지정 가능(width, height)
   예)img, video, input, select, textarea
 
@@ -273,9 +274,6 @@ html{}
 3. LAYOUT (크기, 배치)
 4. DETAIL
 
-
-
-
 ==============
 /* 1.RESET */
 *{padding:0; margin:0;}
@@ -283,3 +281,22 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: normal;}
 b, strong{font-weight:normal;}
 i,em,address {font-style: normal;}
 a {text-decoration: none; color: inherit;}
+
+
+================
+■CSS 가상클래스(Virtual-Class)■
+:link{}   방문한적 없는 링크
+:visited{}   방문한적 있는 링크
+:active{}   마우스클릭상태
+:hover{}   마우스커서올린상태
+:before{content:""}   선택한 태그의 가상의 첫번째 자식태그 만듦
+:after{content:""}   선택한 태그의 가상의 마지막 자식태그를 만듦
+
+
+==============
+.클래스명:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+=====>>> 거의 공식과 같음
