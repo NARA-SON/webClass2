@@ -97,8 +97,14 @@ footer .fLeft {
   float: left;
 }
 
-.fRight {
+footer .fRight {
   float: right;
+}
+
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .fRight img {
@@ -116,10 +122,4 @@ footer .rights {
 
 footer a {
   color: #0043d4;
-}
-
-footer:after {
-  content: "";
-  display: block;
-  clear: both;
 }
