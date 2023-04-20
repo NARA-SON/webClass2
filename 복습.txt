@@ -294,9 +294,15 @@ a {text-decoration: none; color: inherit;}
 
 
 ==============
+■float 속성■ (블록태그들을 나란히배치)
+float:left; right;
+clear:both; left; right;                float를 해제할  때 맨 마지막 자식태그에 사용
+
 .클래스명:after {
   content: "";
   display: block;
   clear: both;
 }
 =====>>> 거의 공식과 같음
+
+float를 사용하여 공중에 띄우게 되면 암묵적으로 display 형태는 inline-block으로 변한다.
