@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>travel zoo</title>
-  <link rel="stylesheet" href="./css/ex1.css">
+  <link rel="stylesheet" href="./css/index1.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,42 +18,56 @@
   <div class="container">
     <!-- 헤더 -->
     <header>
-      <a href="#"><img src="./images/logo.gif" alt="TRAVELZOO로고"></a>
+      <h1><a href="#"><img src="./images/logo.gif" alt="TRAVELZOO로고"></a></h1>
       <p>The Deal Experts. Over 21 Million Suvscribers Worldwide.</p>
     </header>
     <!-- 메인 -->
     <main>
-      <div class="check">
-        <h2>Select Your Site</h2>
-        <form>
-          <input type="checkbox" id="skip">
-          <label for="skip">Make this selection my default Travelzoo site and skip this page in the future.</label>
-        </form>
-      </div>
+      <h3>Select Your Site</h3>
+      <form>
+        <input type="checkbox" id="agree">
+        <label for="agree">Make this selection my default Travelzoo site and skip this page in the future.</label>
+      </form>
       <!-- 메인:아시아 -->
       <div class="nation">
-        <section class="asia">
-          <h3>Asia Pacific</h3>
+        <section>
+          <h4>Asia Pacific</h4>
           <ul>
             <li>
-              <img src="./images/a.jpg" alt="호주국기">
-              <h5>Australia</h5>
-              <a href="#">www.travelzoo.com.au</a>
+              <div class="imgFrame">
+                <img src="./images/a.jpg" alt="Australia">
+              </div>
+              <div class="txtFrame">
+                <h5>Australia</h5>
+                <a href="#">www.travelzoo.com.au</a>
+              </div>
             </li>
             <li>
-              <img src="./images/ca.jpg" alt="중국국기">
-              <h5>中国</h5>
-              <a href="#">cn.travelzoo.com</a>
+              <div class="imgFrame">
+                <img src="./images/ca.jpg" alt="中国">
+              </div>
+              <div class="txtFrame">
+                <h5>中国</h5>
+                <a href="#">cn.travelzoo.com</a>
+              </div>
             </li>
             <li>
-              <img src="./images/hong.jpg" alt="홍콩국기">
-              <h5>香港特區</h5>
-              <a href="#">www.travelzoo.com.hk</a>
+              <div class="imgFrame">
+                <img src="./images/hong.jpg" alt="香港特區">
+              </div>
+              <div class="txtFrame">
+                <h5>香港特區</h5>
+                <a href="#">www.travelzoo.com.hk</a>
+              </div>
             </li>
             <li>
-              <img src="./images/j.jpg" alt="일본국기">
-              日本<br>
-              <a href="#">www.travelzoo.co.jp</a>
+              <div class="imgFrame">
+                <img src="./images/j.jpg" alt="日本">
+              </div>
+              <div class="txtFrame">
+                <h5>日本</h5>
+                <a href="#">www.travelzoo.co.jp</a>
+              </div>
             </li>
             <li>
               <h5>台灣</h5>
@@ -66,42 +80,42 @@
           </ul>
         </section>
         <!-- 메인:미국 -->
-        <section class="america">
-          <h3>Americas</h3>
+        <section>
+          <h4>Americas</h4>
           <ul>
             <li>
-              <img src="./images/canada.jpg" alt="캐나다국기">
+              <img src="./images/canada.jpg" alt="Canada">
               <h5>Canada</h5>
               <a href="#">www.travelzoo.ca</a>
             </li>
             <li>
-              <img src="./images/usa.jpg" alt="미국국기">
+              <img src="./images/usa.jpg" alt="U.S.A.">
               <h5>U.S.A.</h5>
               <a href="#">www.travelzoo.com</a>
             </li>
           </ul>
         </section>
         <!-- 메인:유럽 -->
-        <section class="europe">
-          <h3>Europe</h3>
+        <section>
+          <h4>Europe</h4>
           <ul>
             <li>
-              <img src="./images/germany.jpg" alt="독일국기">
+              <img src="./images/germany.jpg" alt="Deutschland">
               <h5>Deutschland</h5>
               <a href="#">www.travelzoo.de</a>
             </li>
             <li>
-              <img src="./images/spain.jpg" alt="스페인국기">
+              <img src="./images/spain.jpg" alt="España">
               <h5>España</h5>
               <a href="#">www.travelzoo.es</a>
             </li>
             <li>
-              <img src="./images/fanace.jpg" alt="프랑스국기">
+              <img src="./images/fanace.jpg" alt="France">
               <h5>France</h5>
               <a href="#">www.travelzoo.fr</a>
             </li>
             <li>
-              <img src="./images/unitied.jpg" alt="영국국기">
+              <img src="./images/unitied.jpg" alt="United Kingdom">
               <h5>United Kingdom</h5>
               <a href="#">www.travelzoo.co.uk</a>
             </li>
@@ -114,18 +128,16 @@
       <div class="fLeft">
         <dl>
           <dt>Follow Us:</dt>
-          <dd>
-            <a href="#"><img src="./images/icon_facebook_12x12.gif" alt="페이스북로고"> Facebook</a>
-            <a href="#"><img src="./images/icon_twitter_12x12.gif" alt="트위터로고"> Twitter</a>
-            | <a href="#">Privacy Policy</a>
-            | <a href="#">Disclaimer</a>
-          </dd>
+          <dd><a href="#"><img src="./images/icon_facebook_12x12.gif" alt="Facebook"> Facebook</a></dd>
+          <dd><a href="#"><img src="./images/icon_twitter_12x12.gif" alt="Twitter"> Twitter</a></dd>
+          <dd><a href="#">Privacy Policy</a></dd>
+          <dd><a href="#">Disclaimer</a></dd>
         </dl>
-        <p class="rights">©2011 Travelzoo Inc. - All Rights Reserved.</p>
+        <p class="copy">©2011 Travelzoo Inc. - All Rights Reserved.</p>
       </div>
       <div class="fRight">
-        <a href="#"><img src="./images/logo_fly_footer_compact.gif" alt="fly.com로고"></a>
-        <span>Find <a href="#">cheap flights</a></span>
+        <a href="#"><img src="./images/logo_fly_footer_compact.gif" alt="logo_fly"></a>
+        <span>Find <a href="#"><b class="bcf">cheap flights</b></a></span>
       </div>
     </footer>
   </div>
