@@ -1,0 +1,114 @@
+/* common(공통 스타일) */
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+}
+
+/* layout(크기/배치) */
+.all {
+  width: 920px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #F0F0F0;
+}
+
+.innerFooter {
+  margin: 0 auto;
+  width: 920px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lnb {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.gnb {
+  display: flex;
+}
+
+.lnb>li {
+  background: #333;
+  color: #fff;
+  padding: 2px 8px;
+}
+
+.lnb>li:first-of-type {
+  padding-left: 16px;
+}
+
+.lnb>li:last-of-type {
+  padding-right: 16px;
+}
+
+.gnb>li {
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* main */
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents>section {
+  width: calc((100% - 40px)/3);
+}
+
+.contents>section>h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.noticeList>li {
+  margin-bottom: 3px;
+}
+
+.noticeList>li:last-of-type {
+  margin-bottom: 0;
+}
+
+.noticeList>li>a>span {
+  float: right;
+}
+
+.quickList {
+  display: flex;
+}
+
+.all {
+  margin-bottom: 34px;
+}
+
+/* footer */
+.innerFooter {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.footMenu {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.footMenu {
+  margin-right: 20px;
+}
+
+.footMenu>li:last-of-type {
+  margin-right: 0;
+}

@@ -308,40 +308,47 @@ clear:both; left; right;                float를 해제할  때 맨 마지막 �
 float를 사용하여 공중에 띄우게 되면 암묵적으로 display 형태는 inline-block으로 변한다.
 
 =================
-■flex 속성
-★★★★★ display:flex;
+■flex container속성■
+반드시 부모-자식 관계에서 사용
 
-★ flex-direction:   메인축의 방향변경
-  row; 기본값. row-reverse 우-좌.  colume 위-아래. column-reverse 아래-위
+- display:flex;      선택한 태그를 flex-container로 지정한다.
 
-flex-container:
+- flex-direction:   메인축의 방향변경
+        row; 기본값. row-reverse 우-좌.  column 위-아래. column-reverse 아래-위
 
-★★★★★ justify-content: 메인축을 따라서 아이템을 정렬
-  flex-start; 기본값   - 메인축의 시작지점
-  flex-end;     - 메인축의 마지막지점
-  center;      - 메인축의 중앙지점
-  space-between;     - 아이템을 양끝에 딱 붙이고 사이여백을 자동으로 똑같이 넣어줌
-  space-arround;     - 아이템을 양끝에 붙이지 않고 아이템마다 좌우 바깥여백을 똑같이 설정해서 정렬하는 방법
+- justify-content:     ★메인축★을 따라서 아이템을 정렬
+      flex-start; 기본값   - 메인축의 시작지점
+      flex-end;     - 메인축의 마지막지점
+      center;      - 메인축의 중앙지점
+      space-between;     - 아이템을 양끝에 딱 붙이고 사이여백을 자동으로 똑같이 넣어줌
+      space-arround;     - 아이템을 양끝에 붙이지 않고 아이템마다 좌우 바깥여백을 똑같이 설정해서 정렬하는 방법
 
-★★★★★ align-itmes:        수직축을 따라서 아이템을 정렬하는 방법
-  stretch; 기본값  flex-start;   flex-end;   flex-center;
+- align-itmes:        ★수직축★을 따라서 아이템을 정렬하는 방법
+      stretch; 기본값(높이가 설정된만큼 늘어남)  flex-start;   flex-end;   center;
 
-★ flex-wrap:         아이템들의 줄바꿈설정
-  nowrap; 기본값 - 허용x
-  wrap; 허용
+- align-content:       ★수직축★에 기준하여 ★전체 flex-item contents들을 정렬★하는 방식(flex-wrap:wrap; 일 때 유효)
 
-★ order:      아이템들의 배치순서정함 - order값이 작은것부터 먼저 배치됨.
+- flex-wrap:         아이템들의 줄바꿈설정
+         nowrap; 기본값 - 허용x
+         wrap; 허용
 
-★ align-self: 선택한 flex-item을 수직축 기준으로 정렬할 수 있다.
-   flex-start;   flex-end;   center;   stretch
+=================
+■flex item 속성■
 
-★ flex-basis: 가로사이즈의 기준을 정할 때
-★ flex-shrink: flex 컨테이너의 너비가 줄어들어서 아이템들이 설정된 flex-basis의 값보다 더 작아져야할 때, 줄어드는 비율(컨테이너의 flex-wrap아이템들의 줄바꿈 허용이 안될
-      때 유효하다(nowrap상태일 때))
-★ flex-grow - 플렉스 컨테이너의 공간이 여유가 있어서 남았을 때, 남은 공간을 아이템들이 나눠갖는 비율
+- order:      아이템들의 배치순서정함 - order값이 작은것부터 먼저 배치됨.
+
+- align-self: 선택한 flex-item을 수직축 기준으로 정렬할 수 있다.
+   flex-start;   flex-end;   center;   stretch;
+
+- flex-basis: 가로사이즈의 기준을 정할 때(기본점유크기)(가능한~)
+     auto;    px;    %;   숫자;
+
+- flex-shrink: flex 컨테이너의 너비가 줄어들어서 아이템들이 설정된 flex-basis의 값보다 더 작아져야할 때, 줄어드는 비율(nowrap상태일 때 유효함)
+
+- flex-grow - 플렉스 컨테이너의 공간이 여유가 있어서 남았을 때, 남은 공간을 아이템들이 나눠갖는 비율
 
   flex: 1; (이 한 문장이 아래 3줄을 축약한 것)
-  /* flex-basis: 0%;
+  /* flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1; */
 }

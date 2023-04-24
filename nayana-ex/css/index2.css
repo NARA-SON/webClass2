@@ -1,0 +1,38 @@
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents>section:nth-of-type(2) span {
+  margin-left: 200px;
+}
+
+.contents>section:nth-of-type(3)>ul {
+  display: flex;
+}
+
+.corinfo ul {
+  display: flex;
+}
+
+/* layout(크기/배치) */
+
+main {
+  margin-bottom: 30px;
+}
+
+.corinfo ul li {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer {
+  display: flex;
+  background: #F0F0F0;
+  align-items: center;
+  height: 90px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  margin: 0 auto;
+}
