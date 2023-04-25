@@ -311,19 +311,19 @@ float를 사용하여 공중에 띄우게 되면 암묵적으로 display 형태�
 ■flex container속성■
 반드시 부모-자식 관계에서 사용
 
-- display:flex;      선택한 태그를 flex-container로 지정한다.
+♣- display:flex;      선택한 태그를 flex-container로 지정한다.
 
 - flex-direction:   메인축의 방향변경
         row; 기본값. row-reverse 우-좌.  column 위-아래. column-reverse 아래-위
 
-- justify-content:     ★메인축★을 따라서 아이템을 정렬
+♣- justify-content:     ★메인축★을 따라서 아이템을 정렬
       flex-start; 기본값   - 메인축의 시작지점
       flex-end;     - 메인축의 마지막지점
       center;      - 메인축의 중앙지점
       space-between;     - 아이템을 양끝에 딱 붙이고 사이여백을 자동으로 똑같이 넣어줌
       space-arround;     - 아이템을 양끝에 붙이지 않고 아이템마다 좌우 바깥여백을 똑같이 설정해서 정렬하는 방법
 
-- align-itmes:        ★수직축★을 따라서 아이템을 정렬하는 방법
+♣- align-itmes:        ★수직축★을 따라서 아이템을 정렬하는 방법
       stretch; 기본값(높이가 설정된만큼 늘어남)  flex-start;   flex-end;   center;
 
 - align-content:       ★수직축★에 기준하여 ★전체 flex-item contents들을 정렬★하는 방식(flex-wrap:wrap; 일 때 유효)
@@ -333,7 +333,7 @@ float를 사용하여 공중에 띄우게 되면 암묵적으로 display 형태�
          wrap; 허용
 
 =================
-■flex item 속성■
+■flex item 속성■ (처음부턴 안써도 무방함. width로 대체 가능)
 
 - order:      아이템들의 배치순서정함 - order값이 작은것부터 먼저 배치됨.
 

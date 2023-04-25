@@ -1,38 +1,36 @@
-.contents {
+/* common */
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+}
+
+/* layout(크기/배치) */
+.all {
+  width: 920px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #F0F0F0;
+}
+
+.innerFooter {
+  margin: 0 auto;
+  width: 920px;
+}
+
+/* header */
+header {
   display: flex;
   justify-content: space-between;
 }
 
-.contents>section:nth-of-type(2) span {
-  margin-left: 200px;
-}
-
-.contents>section:nth-of-type(3)>ul {
+.lnb {
   display: flex;
-}
-
-.corinfo ul {
-  display: flex;
-}
-
-/* layout(크기/배치) */
-
-main {
+  justify-content: flex-end;
   margin-bottom: 30px;
 }
 
-.corinfo ul li {
-  border-right: 1px solid grey;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-footer {
+.gnb {
   display: flex;
-  background: #F0F0F0;
-  align-items: center;
-  height: 90px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 12px;
-  margin: 0 auto;
 }
