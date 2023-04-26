@@ -352,3 +352,32 @@ float를 사용하여 공중에 띄우게 되면 암묵적으로 display 형태�
   flex-grow: 1;
   flex-shrink: 1; */
 }
+
+=================
+■list-style 속성■ - li 태그만 적용가능 
+list-style:none;
+    *disc;   circle;   square;   upper-alpha;   lower-alpha;   upper-roman;   lower-roman;
+
+■모서리 둥글게■
+border-radius:20px 40px 60px 80px; (시계방향순으로)
+    *%단위도 가능, 20px; - 사방을 20픽셀곡률로 지정
+
+■그림자■
+box-shadow:0px 0px 0px 색상;
+text-shadow:0px 0px 0px 색상;
+    *x좌표 y좌표 확산정도 색상
+    * 콤마를 사용해서 여러개의 그림자를 넣을 수 있다.
+
+■transition 전환■ (변경하기 전 스타일에 (부모) 미리 설정)
+transition-property:width;        넓이
+     *height;   background;   border-radius;   all;   등
+transition-duration:2s;             지속시간
+transition-timing-function:ease;       가속도스타일
+      *linear 일정한 속도
+transition-delay:0s;                  지연시간
+*위 4개를 한 줄로 합치면 => transition:width 2s ease 0s;
+
+■object-fit■ - video/img 크기조절할 때 사용
+object-fit:cover;         이미지잘려도신경안씀
+object-fit:contain;         이미지비율유지
+object-position: 0% 0%       커버쓸 때 이미지 좌표조정할 때 사용

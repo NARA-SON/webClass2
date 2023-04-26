@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+.mainBanner {
+  height: 100vh;
+  position: relative;
+  /* margin: 0 auto; */
+}
+
+.mainBanner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainBanner h2 {
+  position: absolute;
+
+  /* left: calc(50% - 170px);
+  top: calc(50% - 60px); */
+  /* 위 두 줄은 아래 네 줄과 결과값 똑같음 */
+  left: 50%;
+  top: 50%;
+  margin-left: -170px;
+  margin-top: -60px;
+
+  font-size: 5rem;
+  color: white;
+  width: 340px;
+  height: 120px;
+  text-align: center;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
+.mainBanner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 30%;
+}
