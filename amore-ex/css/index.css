@@ -47,7 +47,8 @@ nav .gnb {
   color: #333;
 }
 
-.mainBanner>h2 {
+/* Asian Beauty Creator */
+main h2 {
   color: #2A377E;
   font-family: Times New Roman;
   font-size: 60px;
@@ -58,19 +59,19 @@ nav .gnb {
 .bannerTabMenu {
   width: 380px;
   height: 100px;
-  border: 1px solid green;
   display: flex;
   position: relative;
   margin-bottom: 70px;
 }
 
 .bannerTabMenu>dt {
-  border: 1px solid red;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 10px;
+  color: #555;
+  font-weight: bold;
 }
 
 .bannerTabMenu dd {
@@ -79,14 +80,26 @@ nav .gnb {
   opacity: 0;
 }
 
-.bannerTabMenu:hover {
+.bannerTabMenu>dt.on {
+  color: #1F275F;
+  border-bottom: 1px solid #1F275F;
+}
+
+.bannerTabMenu>dt.on+dd {
   opacity: 1;
+}
+
+.bannerTabMenu li {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
 }
 
 /* footer */
 footer {
   padding-top: 30px;
   color: white;
+  background: url(../img/bg_lower.gif) no-repeat 1000px 0;
   background-color: #2A377E;
 }
 
@@ -95,12 +108,7 @@ footer {
   width: 1000px;
 }
 
-footer label {
-  display: none;
-}
-
 .contents {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   width: 600px;
@@ -112,18 +120,17 @@ footer label {
   padding: 10px 0;
 }
 
+/* 인재상 복리후생 */
 /* dl */
 .intro {
   width: 200px;
   padding: 10px 0;
-  border: 1px solid white;
   position: relative;
   display: flex;
 }
 
 /* dt */
 .intro>dt {
-  border: 1px solid red;
   padding: 0 10px;
   margin: 0 2px;
   background: #1F275F;
@@ -137,14 +144,21 @@ footer label {
   opacity: 0;
 }
 
-.intro>dt:hover {
-  opacity: 1;
+.intro>dt.on {
+  background: #3F53C5;
 }
 
+.intro>dt.on+dd {
+  opacity: 1;
+}
 
 .familysite {
   border-top: 1px solid white;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+footer label {
+  display: none;
 }
