@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>아모레퍼시픽</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index2.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 </head>
 
 <body>
-  <!-- total -->
-  <div class="contain">
-    <div class="headermain">
+  <div id="container">
+    <!-- top -->
+    <div class="top">
       <!-- header -->
-      <header>
+      <header class="cw">
         <div class="logo">
           <h1>
             <a href="./index1/html">
@@ -29,8 +29,8 @@
         </div>
         <nav>
           <ul class="lnb">
-            <li><a href="#">HOME /</a></li>
-            <li><a href="#">SITEMAP /</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SITEMAP</a></li>
             <li><a href="#">CONTACT US</a></li>
           </ul>
           <ul class="gnb">
@@ -43,11 +43,9 @@
           </ul>
         </nav>
       </header>
-      <!-- main -->
-      <main>
+      <div class="mainBanner cw">
         <h2>Asian Beauty Creator</h2>
-        <!-- 채용뉴스 -->
-        <dl class="bannerTabMenu">
+        <dl>
           <dt class="on">채용뉴스</dt>
           <dd>
             <ul>
@@ -89,25 +87,24 @@
             </ul>
           </dd>
         </dl>
-      </main>
+      </div>
     </div>
-  </div>
-  <!-- footer-->
-  <footer>
+
+    <!-- bottom-->
     <div class="bottom">
       <!-- 퀵메뉴 -->
-      <div class="contents">
+      <div class="contents cw">
         <article>
           <h3>Quick Menu</h3>
-          <ol>
-            <li><a href="#">1 입사지원 ></a></li>
-            <li><a href="#">2 상시채용 ></a></li>
-            <li><a href="#">3 지원결과 ></a></li>
-            <li><a href="#">4 FAQ</a></li>
+          <ol class="quickList">
+            <li><a href="#">입사지원 ></a></li>
+            <li><a href="#">상시채용 ></a></li>
+            <li><a href="#">지원결과 ></a></li>
+            <li><a href="#">FAQ</a></li>
           </ol>
         </article>
         <article>
-          <dl class="intro">
+          <dl class="tabMenu">
             <dt class="on">인재상</dt>
             <dd>
               <a href="#"><img src="./img/img_person.jpg" alt="Asian Beauty Creator 아모레 퍼시픽은 이런 인재를 소중히 생각합니다">
@@ -125,8 +122,8 @@
           </p>
         </article>
       </div>
-      <!-- 협력사사이트 -->
-      <div class="familysite">
+      <!-- footer -->
+      <footer class="cw">
         <div>
           <label for="family">협력사 사이트</label>
           <select id="family">
@@ -138,9 +135,9 @@
         <div>
           <p><img src="./img/footer_copyright.gif" alt="COPYRIGHT ⓒ 2009 AMOREPACIFIC. ALL RIGHTS RESERVED"></p>
         </div>
-      </div>
+      </footer>
     </div>
-  </footer>
+
 </body>
 
 </html>

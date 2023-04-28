@@ -1,0 +1,217 @@
+/* common */
+html {
+  font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cw {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* layout */
+#container {}
+
+.top {
+  background: url("../img/bg_body.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bottom {
+  background: #2a367e;
+}
+
+/* 
+footer {
+  border: 1px solid blue;
+} */
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lnb {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.lnb>li {
+  padding-right: 15px;
+  background: url("../img/bg_sideMenu.gif") no-repeat calc(100% - 5px) 50%;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.lnb>li:last-of-type {
+  background: none;
+  padding-right: 0;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb>li {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* mainBanner */
+.mainBanner {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  /* 첫번째 자식태그한테 margin-top을 만들어서 여백을 주는 것 보다 부모태그한테 padding-top을 지정해주는것이 좋다. 그 이유는 자식태그는 content-box안에 놓여있고 content-box안에서 바깥쪽으로 부모태그의 padding 그리고 border를 밀어내는 것이 자식태그의 margin이기 때문이다. 만약에 부모태그에 padding과 border가 없다면 자식태그가 밀어내는 여백이 부모태그 바깥으로 흘러버리게 되어 부모태그의 높이가 정상적으로 유지되지 않는다.  */
+}
+
+.mainBanner>h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.8rem;
+  color: #2a367e;
+  margin-bottom: 40px;
+}
+
+.mainBanner>dl {
+  width: 400px;
+  height: 120px;
+  position: relative;
+}
+
+.mainBanner>dl>dt {
+  height: 30px;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.mainBanner>dl>dt.on {
+  color: #2a367e;
+  font-weight: bold;
+  border-bottom: 1px solid #2a367e;
+}
+
+.mainBanner>dl>dd {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 100%;
+  display: none;
+}
+
+.mainBanner>dl>dt.on+dd {
+  display: block;
+}
+
+.mainBanner dd li {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainBanner dd li:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* content */
+.contents {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.contents>article {
+  margin-right: 80px;
+}
+
+.contents>articel:last-of-type {
+  margin-right: 0px;
+}
+
+.contents>article>h3 {
+  margin-bottom: 24px;
+}
+
+.quickList {
+  padding-left: 12px;
+  /* list-style-type: decimal;
+  list-style-position: inside; */
+  background: url(../img/bg_service.gif) no-repeat 0 4px;
+  background: url(../img/bg_service.gif) no-repeat 0 0px;
+  line-height: 163%;
+}
+
+.tabMenu {
+  width: 190px;
+  height: 110px;
+  position: relative;
+}
+
+.tabMenu>dt {
+  float: left;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-right: 5px;
+  background: #1c2566;
+}
+
+.tabMenu>dt.on {
+  background: #4152ba;
+}
+
+.tabMenu>dd {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 80px;
+  display: none;
+}
+
+.tabMenu>dt.on+dd {
+  display: block;
+}
+
+/* 아래 두 단락은 안해도 상관없으나, 나중에 문제될 수 있으므로 문제가 발생하기 전에 넣어주는 것이 좋음 */
+.tabMenu>dd>a {
+  display: block;
+  height: 100%;
+}
+
+.tabMenu>dd>a>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+footer>div {
+  color: white;
+}
+
+footer>div>label {
+  display: none;
+}
+
+footer>div>select {
+  background: #2a367e;
+  color: white;
+  border: 1px solid #fff;
+  padding: 3px 40px 3px 10px;
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
