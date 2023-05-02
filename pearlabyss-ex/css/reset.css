@@ -10,12 +10,12 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 b,
 strong {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 i,
@@ -31,5 +31,5 @@ a {
 
 ul,
 ol {
-  list-style: none
+  list-style: none;
 }

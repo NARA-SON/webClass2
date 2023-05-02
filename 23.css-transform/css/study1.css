@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  background: grey;
+  background: black;
+  color: white;
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid yellow;
   width: 200px;
   height: 200px;
   margin: 50px auto;
@@ -67,4 +68,12 @@
 
 .j:hover {
   transform: rotateY(180deg);
+}
+
+.k:hover {
+  transform: skewX(30deg);
+}
+
+.l:hover {
+  transform: skewY(30deg);
 }
