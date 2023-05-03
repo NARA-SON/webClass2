@@ -1,0 +1,105 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* layout */
+header {
+  background: orange;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+  /* 원래작업한 gnb대신 아래 세줄과 헤더에프터 넣기 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header:after {
+  content: "";
+  height: 50px;
+}
+
+/* 여기까지 */
+
+header:hover {
+  width: 300px;
+}
+
+/* .gnb {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+.gnb>li {
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+  border-bottom: 1px solid #ddd;
+}
+
+.gnb>li:hover {
+  height: 220px;
+}
+
+.gnb>li>a {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.gnb>li>ul>li {
+  height: 40px;
+}
+
+.gnb>li>ul>li:hover {
+  background: black;
+  color: #fff;
+}
+
+.gnb>li>ul>li>a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.container {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  transition: all 0.5s ease 0.1s;
+}
+
+header:hover+.container {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+.container>div {
+  height: 100vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

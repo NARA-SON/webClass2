@@ -1,0 +1,40 @@
+/* reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+header {
+  border: 1px solid red;
+  background: orange;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 1s ease 0s;
+}
+
+header:hover {
+  width: 300px;
+}
+
+.gnb {
+  border: 1px solid red;
+}
+
+.gnb>li>a {
+  border: 1px solid blue;
+}
