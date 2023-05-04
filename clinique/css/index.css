@@ -1,0 +1,102 @@
+/* common */
+
+/* layout */
+header {
+  position: fixed;
+  width: 1440px;
+  height: 300px;
+  border: 1px solid red;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.headLeft {
+  display: flex;
+}
+
+.headRight {
+  width: 300px;
+}
+
+header img {
+  margin-right: 50px;
+}
+
+.gnb {
+  width: 800px;
+  border: 1px solid aqua;
+  position: relative;
+}
+
+.gnb>ul {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.gnb>ul>li:first-line {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.gnb>ul>li {
+  border: 1px solid lime;
+}
+
+.gnb>ul>li>ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.gnb>ul>li>ul>li {
+  border: 1px solid green;
+}
+
+header img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.lnb>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.myPage>ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* layout - main */
+.videoBanner video {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* layout - main - evenbetter */
+.evenBetter>h1 {
+  font-size: 10rem;
+}
+
+.evenBetter {
+  position: relative;
+}
+
+.evenTexture {
+  position: absolute;
+  bottom: o;
+  left: 300px;
+}
+
+.evenModel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
