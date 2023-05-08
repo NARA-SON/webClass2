@@ -1,77 +1,69 @@
 /* common */
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url("../font/SCDream8.otf") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'S-CoreDream'
+}
+
+.total {
+  width: 1910px;
+  height: 960px;
+}
 
 /* layout */
+header img {
+  width: 200px;
+  object-fit: cover;
+}
+
 header {
+  background: white;
   position: fixed;
-  width: 1440px;
-  height: 300px;
-  border: 1px solid red;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  top: 20px;
+  width: 1440px;
+  height: 70px;
   display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+header:hover {
+  height: 400px;
 }
 
 .headLeft {
   display: flex;
 }
 
-.headRight {
-  width: 300px;
-}
-
-header img {
-  margin-right: 50px;
-}
-
-.gnb {
-  width: 800px;
-  border: 1px solid aqua;
-  position: relative;
-}
-
 .gnb>ul {
   display: flex;
-  justify-content: space-around;
-  border: 1px solid red;
-}
-
-.gnb>ul>li:first-line {
-  font-weight: bold;
-  font-size: 1.1rem;
+  justify-content: space-between;
 }
 
 .gnb>ul>li {
-  border: 1px solid lime;
+  border: 1px solid blue;
+  width: 25%;
+}
+
+.gnb>ul>li:first-line {
+  background: yellow;
+  font-weight: bold;
 }
 
 .gnb>ul>li>ul {
-  width: 800px;
   display: flex;
-  justify-content: space-between;
-  border: 1px solid blue;
-  position: absolute;
-  top: 50px;
-  left: 0px;
 }
 
 .gnb>ul>li>ul>li {
+  margin-top: 50px;
   border: 1px solid green;
-}
-
-header img {
-  width: 150px;
-  object-fit: cover;
-}
-
-.lnb>ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.myPage>ul {
-  display: flex;
-  justify-content: flex-end;
 }
 
 /* layout - main */
@@ -81,22 +73,66 @@ header img {
 }
 
 /* layout - main - evenbetter */
-.evenBetter>h1 {
-  font-size: 10rem;
-}
 
 .evenBetter {
+  border: 1px solid red;
   position: relative;
 }
 
-.evenTexture {
-  position: absolute;
-  bottom: o;
-  left: 300px;
+.evenBetter>h1 {
+  font-size: 10rem;
+  text-align: end;
 }
 
-.evenModel {
+.evenTexture img {
+  position: absolute;
+  bottom: 5%;
+  left: 27%;
+  width: 200px;
+  object-fit: cover;
+  transform: rotate(-110deg);
+}
+
+.evenModel img {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 800px;
+  object-fit: cover;
+}
+
+.evenProduct img {
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* layout - main - surge */
+.surge {
+  border: 1px solid blue;
+  position: relative;
+}
+
+.surge>h1 {
+  font-size: 10rem;
+}
+
+.surgeModel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.surgeProduct {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.surgeTexture {
+  position: absolute;
+  left: 30%;
+  top: 10%;
 }
