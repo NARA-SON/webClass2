@@ -22,7 +22,7 @@ header img {
 }
 
 header {
-  background: white;
+  background: none;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -32,10 +32,13 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  transition: all 0.5s ease 0s;
 }
 
 header:hover {
   height: 400px;
+  width: 1440px;
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .headLeft {
