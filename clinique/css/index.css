@@ -10,11 +10,6 @@
   font-family: 'S-CoreDream'
 }
 
-.total {
-  width: 1910px;
-  height: 960px;
-}
-
 /* layout */
 header img {
   width: 200px;
@@ -98,7 +93,7 @@ header:hover {
 
 .evenModel img {
   position: absolute;
-  bottom: 0;
+  top: 100%;
   right: 0;
   height: 800px;
   object-fit: cover;
@@ -106,7 +101,7 @@ header:hover {
 
 .evenProduct img {
   position: absolute;
-  bottom: 10px;
+  top: 100%;
   left: 20%;
   height: 700px;
   object-fit: cover;
@@ -124,13 +119,13 @@ header:hover {
 
 .surgeModel {
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
 }
 
 .surgeProduct {
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 10%;
 }
 
