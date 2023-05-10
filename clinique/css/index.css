@@ -1,13 +1,21 @@
 /* common */
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: 'S-CoreDream5';
+  src: url("../font/SCDream5.otf") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream8';
   src: url("../font/SCDream8.otf") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: 'S-CoreDream'
+  font-family: 'S-CoreDream5';
+  font-size: 16px;
 }
 
 /* layout */
@@ -17,50 +25,57 @@ header img {
 }
 
 header {
-  background: none;
+  border: 1px solid red;
   position: fixed;
+  width: 1440px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  top: 20px;
-  width: 1440px;
-  height: 70px;
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
-  transition: all 0.5s ease 0s;
 }
 
-header:hover {
-  height: 400px;
-  width: 1440px;
-  background: rgba(255, 255, 255, 0.72);
+header nav {
+  display: flex;
+  width: 100%;
 }
 
 .headLeft {
-  display: flex;
-}
-
-.gnb>ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.gnb>ul>li {
   border: 1px solid blue;
-  width: 25%;
-}
-
-.gnb>ul>li:first-line {
-  background: yellow;
-  font-weight: bold;
-}
-
-.gnb>ul>li>ul {
   display: flex;
 }
 
-.gnb>ul>li>ul>li {
-  margin-top: 50px;
+.gnb {
+  border: 1px solid green;
+  display: flex;
+}
+
+.gnb>li {
+  border: 1px solid aqua;
+  width: 25%;
+  text-align: center;
+}
+
+.headLeft>.gnb>li:first-line {
+  padding: 30px 0;
+}
+
+.gnb>li>ul {
+  display: flex;
+}
+
+.gnb>li::first-line {
+  background: white;
+}
+
+.headRight {
+  border: 1px solid blue;
+}
+
+.lnb {
+  border: 1px solid green;
+}
+
+.myPage {
   border: 1px solid green;
 }
 
