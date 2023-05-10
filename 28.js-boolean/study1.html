@@ -18,8 +18,9 @@
     // alert(2 > 3)
     // alert(10 >= 10) // 10은 10보다 크거나 같다. -true
     // alert(10 <= 10) // 10은 10보다 작거나 같다. -true
-    // alert(10 == 10) // 10은 10과 같다. -true
+    // alert(10 == "10") // 10은 10과 같다. -true
     // alert(10 != 10) // 10은 10과 같지 않다. -false
+    // 10===10
   </script>
 
   <h2>사실에 근거한 참거짓</h2>
@@ -31,6 +32,9 @@
     <li>변수메모리는 있는데 초기화를 하지 않은경우의 변수</li>
   </ul>
   <script>
+    let age = prompt("나이를 입력해보시져..")
+    alert(age ? `${age}살이시군요` : `나이를 입력을 왜안하세요..`)
+
     // 0 - false로 간주
     // let jjjj;
     // alert(jjjj)
@@ -38,8 +42,7 @@
     // "" - false로 간주
     // "test" - true로 간주
     // let a; false로 간주 
-    var a;
-    !a
+
   </script>
 </body>
 
