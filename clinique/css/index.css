@@ -18,6 +18,11 @@
   font-size: 16px;
 }
 
+.total {
+  width: 1910px;
+  height: 970px;
+}
+
 /* layout */
 header img {
   width: 200px;
@@ -25,79 +30,155 @@ header img {
 }
 
 header {
-  border: 1px solid red;
   position: fixed;
-  width: 1440px;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 1s ease 0s;
+}
+
+header:hover {
+  background: rgba(255, 255, 255, 0.774);
+  height: 500px;
 }
 
 header nav {
+  width: 1440px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.headLeft {
+  width: 850px;
+  display: flex;
+  flex: 1;
+}
+
+.gnb {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.gnb>li {
   display: flex;
   width: 100%;
 }
 
-.headLeft {
-  border: 1px solid blue;
+.gnb>li>a {
   display: flex;
-}
-
-.gnb {
-  border: 1px solid green;
-  display: flex;
-}
-
-.gnb>li {
-  border: 1px solid aqua;
-  width: 25%;
-  text-align: center;
-}
-
-.headLeft>.gnb>li:first-line {
-  padding: 30px 0;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
 }
 
 .gnb>li>ul {
+  border: 1px solid red;
   display: flex;
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 800px;
 }
 
-.gnb>li::first-line {
-  background: white;
+.gnb>li>ul>li {
+  width: 100%;
 }
+
+.gnb>li>ul>li>ul>li {
+  border: 1px solid blue;
+  padding: 5px;
+  color: rgb(79, 79, 79);
+}
+
+.gnb>li>ul>li>ul>li>ul>li {
+  border: 1px solid yellow;
+  padding: 5px;
+
+}
+
+/* menu animation */
+.gnb .cliStory ul {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.gnb .cliStory:hover ul {
+  opacity: 1;
+}
+
+.gnb .skinCare ul {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.gnb .skinCare:hover ul {
+  opacity: 1;
+}
+
+.gnb .makeUp ul {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.gnb .makeUp:hover ul {
+  opacity: 1;
+}
+
+.gnb .speEvent ul {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.gnb .speEvent:hover ul {
+  opacity: 1;
+}
+
+/* menu animation end */
 
 .headRight {
   border: 1px solid blue;
 }
 
-.lnb {
-  border: 1px solid green;
-}
-
-.myPage {
-  border: 1px solid green;
+.headRight>ul {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* layout - main */
 .videoBanner video {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 /* layout - main - evenbetter */
-
 .evenBetter {
   border: 1px solid red;
   position: relative;
 }
 
-.evenBetter>h1 {
+.evenBetter h1 {
   font-size: 10rem;
   text-align: end;
+  font-family: 'S-CoreDream8';
+  margin-right: 20px;
 }
 
-.evenTexture img {
+.evenBetter .evenModel img {
+  height: 850px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  float: right;
+}
+
+.evenBetter .evenTexture img {
   position: absolute;
   bottom: 5%;
   left: 27%;
@@ -106,20 +187,19 @@ header nav {
   transform: rotate(-110deg);
 }
 
-.evenModel img {
+.evenBetter .evenProduct img {
   position: absolute;
-  top: 100%;
-  right: 0;
-  height: 800px;
-  object-fit: cover;
-}
-
-.evenProduct img {
-  position: absolute;
-  top: 100%;
+  top: 20%;
   left: 20%;
   height: 700px;
   object-fit: cover;
+}
+
+.evenBetter .evenText {
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 40%;
 }
 
 /* layout - main - surge */
@@ -129,23 +209,44 @@ header nav {
 }
 
 .surge>h1 {
-  font-size: 10rem;
+  font-size: 12rem;
+  font-family: 'S-CoreDream8';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  z-index: 2;
 }
 
-.surgeModel {
+.surgeModel img {
   position: absolute;
-  top: 100%;
+  top: 250px;
+  right: 350px;
+  width: 375px;
+  z-index: 5;
+}
+
+.surgeProduct img {
+  position: absolute;
+  bottom: 95px;
+  left: 370px;
+  width: 570px;
+}
+
+.surgeTexture img {
+  position: absolute;
+  left: 890px;
+  top: 60px;
+  width: 400px;
+  transform: rotate(-70deg)
+}
+
+.surgeText {
+  position: absolute;
+  bottom: 0;
   right: 0;
 }
 
-.surgeProduct {
-  position: absolute;
-  top: 100%;
-  left: 10%;
-}
-
-.surgeTexture {
-  position: absolute;
-  left: 30%;
-  top: 10%;
+/* layout - main - bestNow */
+.bestItem {
+  display: flex;
 }
