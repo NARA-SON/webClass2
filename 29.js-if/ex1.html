@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비만도 예제</title>
+  <link rel="stylesheet" href="./css/ex1.css">
 </head>
 
 <body>
@@ -26,15 +27,41 @@
   <h2>비만도 측정 (BMI지수)</h2>
 
   <script>
+    let userNm = prompt("당신의 이름을 입력해주세요.")
     let userHt = Number(prompt("당신의 키를 입력해주세요."))
     let userKg = Number(prompt("당신의 몸무게를 입력해주세요."))
-    let userBmi = userKg / Math.pow((userHt / 100), 2)
+    let userBmi = userKg / Math.trunc(Math.pow((userHt / 100), 2))
+
+    // let userRs = userBmi >= 25.0 ? "비만" : 
+    //                 userBmi >= 23.0 ? "과체중" : 
+    //                 userBmi >= 18.5 ? "정상" : "저체중"
+
     let userRs;
+    if (userBmi >= 25) { userRs = "비만" }
+    else if (userBmi >= 23 && userBmi <= 24.9) { userRs = "과체중" }
+    else if (userBmi >= 18.5 && userBmi <= 22.9) { userRs = "정상" }
+    else { userRs = "저체중" }
 
-    // let userRs = userBmi >= 25.0 ? "비만" : userBmi >= 23.0 ? "과체중" : userBmi >= 18.5 ? "정상" : "저체중"
-    if (userBmi >= 25) { userRs = "비만" } else if (userBmi >= 23 && userBmi <= 24.9) { userRs = "과체중" } else if (userBmi >= 18.5 && userBmi <= 22.9) { userRs = "정상" } else { userRs = "저체중" }
-
-    document.write(`당신의 키는 ${userHt}센티미터이고, 몸무게는 ${userKg}kg입니다. bmi수치는 ${userBmi}이며 ${userRs}입니다.`)
+    document.write(`
+    <table class="rsStyle">
+      <caption>${userNm}님의 비만도 검사결과</caption>
+      <tr>
+        <th>키</th>
+        <td>${userHt}cm</td>
+      </tr>
+      <tr>
+        <th>몸무게</th>
+        <td>${userKg}kg</td>
+      </tr>
+      <tr>
+        <th>bmi수치</th>
+        <td>${userBmi}</td>
+      </tr>
+      <tr>
+        <th>결과</th>
+        <td>${userRs}</td>
+      </tr>
+    </table>`)
 
   </script>
 
