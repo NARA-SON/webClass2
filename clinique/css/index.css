@@ -21,6 +21,7 @@
 .total {
   width: 1910px;
   height: 970px;
+  margin: 0 auto;
 }
 
 /* layout */
@@ -247,6 +248,45 @@ header nav {
 }
 
 /* layout - main - bestNow */
+.bestNow {
+  border: 1px solid blue;
+}
+
 .bestItem {
   display: flex;
 }
+
+.bestText {
+  font-size: 5rem;
+  padding-left: 550px;
+  padding-top: 50px;
+  line-height: 90px;
+}
+
+.bestText h4 {
+  font-family: 'S-CoreDream8';
+}
+
+/* layout - main - reality */
+.reality {
+  border: 1px solid blue;
+  position: relative;
+}
+
+.realLogo {
+  padding-top: 100px;
+  padding-left: 400px;
+}
+
+.realPro {
+  padding-top: 70px;
+  padding-left: 300px;
+}
+
+.realQr {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+
+/* layout - main - review */
