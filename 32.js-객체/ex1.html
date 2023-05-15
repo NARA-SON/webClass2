@@ -15,51 +15,47 @@
     <ol class="movieChart">
       <script>
         let movieChart = [
-          [
-            1,
-            "img1.jpg",
-            "가디언즈 오브 갤럭시-Volume 3",
-            40.8
-          ],
-          [
-            2,
-            "img2.jpg",
-            "분노의 질주-라이드 오어 다이",
-            17.2
-          ],
-          [
-            3,
-            "img3.jpg",
-            "슈퍼 마리오 브라더스",
-            7.7
-          ],
-          [
-            4,
-            "img4.jpg",
-            "더 퍼스트 슬램덩크",
-            5.8
-          ],
-          [
-            5,
-            "img5.jpg",
-            "메리 마이 데드 바디",
-            5.7
-          ]
-        ]
+          {
+            lank: 1,
+            imgFileName: "img1.jpg",
+            movieTitle: "가디언즈 오브 갤럭시- Volume 3",
+            reserRate: 40.8
+          }, {
+            lank: 2,
+            imgFileName: "img2.jpg",
+            movieTitle: "분노의 질주-라이드 오어 다이",
+            reserRate: 17.2
+          }, {
+            lank: 3,
+            imgFileName: "img3.jpg",
+            movieTitle: "슈퍼 마리오 브라더스",
+            reserRate: 7.7
+          }, {
+            lank: 4,
+            imgFileName: "img4.jpg",
+            movieTitle: "더 퍼스트 슬램덩크",
+            reserRate: 5.8
+          }, {
+            lank5,
+            imgFileName: "img5.jpg",
+            movieTitle: "메리 마이 데드 바디",
+            reserRate: 5.7
+          }]
+
         for (let i = 0; i < movieChart.length; i++) {
           document.write(`
         <li>
         <figure>
-          <img src="./img/${movieChart[i][1]}" alt="${movieChart[i][2]}"
-          <span>${movieChart[i][0]}</span>
+          <img src="./img/${movieChart[i].imgFileName}" alt="${movieChart[i].movieTitle}"
+          <span>${movieChart[i].lank}</span>
           <ul class="hiddenMenu">
             <li><a href="#">상세보기</a></li>
             <li><a href="#">예매하기</a></li>
           </ul>
         </figure>
-        <h3>${movieChart[i][2]}</h3>
-        <p>예매율 ${movieChart[0][3]}%</p>
-      </li>
+        <h3>${movieChart[i].movieTitle}</h3>
+        <p>예매율 ${movieChart[i].reserRate}%</p >
+      </li >
         `)
         }
 
