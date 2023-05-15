@@ -163,6 +163,16 @@ header nav {
   position: relative;
 }
 
+.evenBetter:after {
+  content: "";
+  background: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  width: 300px;
+  height: 400px;
+}
+
 .evenBetter h1 {
   font-size: 10rem;
   text-align: end;
@@ -181,27 +191,47 @@ header nav {
 
 .evenBetter .evenTexture img {
   position: absolute;
-  bottom: 5%;
-  left: 27%;
-  width: 200px;
+  bottom: -8%;
+  left: 29%;
+  width: 300px;
   object-fit: cover;
   transform: rotate(-110deg);
+  z-index: 1;
 }
 
 .evenBetter .evenProduct img {
   position: absolute;
   top: 20%;
   left: 20%;
-  height: 700px;
+  height: 800px;
   object-fit: cover;
+  z-index: 1;
 }
 
 .evenBetter .evenText {
   border: 1px solid red;
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 40%;
+  left: 35%;
+  color: #333;
 }
+
+.evenProduct .evenText h4 {
+  font-size: 25px;
+  line-height: 160%;
+  padding-bottom: 10%;
+}
+
+.evenProduct .evenText>p {
+  line-height: 170%;
+  padding-bottom: 100px;
+  font-size: 18px;
+}
+
+.barText>p {
+  font-size: 18px;
+}
+
 
 /* layout - main - surge */
 .surge {
@@ -290,3 +320,24 @@ header nav {
 }
 
 /* layout - main - review */
+.review {
+  border: 1px solid blue;
+  display: flex;
+  position: relative;
+}
+
+.reviewText>h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.reviewText>p {
+  line-height: 150%;
+  padding: 100px 0;
+}
+
+.reviewSale {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
