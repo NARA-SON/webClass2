@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>값으로서의 함수</h1>
+  <h1 onclick="alert('test')">값으로서의 함수</h1>
   <p>변수를 만들고 변수안에 동작을 표현하는 익명함수를 저장하는 형태로도 함수를 만들 수 있다.</p>
   <p>let a = function(){}</p>
   <p>function 키워드를 통해서 만드는 기본적인 문법 function a(){}같은 경우에는 정의하는 부분이 언제나 최상단으로 끌어올려지게 된다(호이스팅)</p>
@@ -18,15 +18,7 @@
   <script>
     // a();
     // function a() {
-    //   alert("A함수 실행함")
-    // }
-
-    // a();
-    let a = function () {
-      alert("A함수 실행함")
-    };
-
-  </script>
+    //   alert(" A함수 실행함") // } // a(); let a=function () { alert("A함수 실행함") }; </script>
   <h2>객체 안에서의 메서드 표현</h2>
   <p>사물을 표현하는데 있어서 사물이 갖고있는 동작을 표현</p>
   <script>

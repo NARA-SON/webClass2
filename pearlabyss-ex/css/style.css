@@ -200,13 +200,14 @@ main {
 
 /* --------main-news-------- */
 .news {
-  padding: 70px 0;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
-.news h3 {
+.news>h3 {
   font-weight: bold;
   font-size: 1.2rem;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .news h4 {
@@ -222,8 +223,8 @@ main {
 .news .date {
   font-size: 0.8rem;
   color: #888;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .news>ul>li {
@@ -234,7 +235,7 @@ main {
   content: "";
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   background: #ddd;
   width: 1px;
   height: 90px;
@@ -247,23 +248,30 @@ main {
 
 /* -------main-culture------- */
 .culture {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .culture>ul {
   display: flex;
+  /* height: 574px; */
 }
 
 .culture>ul>li {
   position: relative;
   overflow: hidden;
+  flex: 1;
 }
 
-.culture img {
+.culture>ul>li>a {
+  display: block;
+  height: 100%;
+}
+
+.culture>ul>li>a>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(1)brightness(0.7);
+  filter: grayscale(0.8)brightness(1.1);
   transition: all 1s ease 0s;
 }
 
@@ -272,7 +280,7 @@ main {
   filter: grayscale(0)brightness(1);
 }
 
-.box {
+.floatingBox {
   position: absolute;
   bottom: 20%;
   left: 50%;
@@ -281,10 +289,11 @@ main {
   color: white;
 }
 
-.box h4 {
+.floatingBox>h4 {
   font-size: 1.5rem;
   margin-bottom: 30px;
   font-weight: bold;
+  transform: translateY(30px);
   transition: all 1s ease 0s;
 }
 
@@ -292,7 +301,7 @@ main {
   transform: translateY(-10px);
 }
 
-.box p {
+.floatingBox>p {
   position: relative;
   padding-top: 20px;
   opacity: 0;
@@ -304,7 +313,7 @@ main {
   opacity: 1;
 }
 
-.box p:after {
+.floatingBox p:after {
   content: "";
   width: 30px;
   height: 1px;
