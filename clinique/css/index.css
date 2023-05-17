@@ -31,6 +31,11 @@
   margin: 0 auto;
 }
 
+.contents {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* layout */
 header img {
   width: 200px;
@@ -295,7 +300,6 @@ header nav {
 
 .bestText {
   font-size: 5rem;
-  padding-left: 550px;
   padding-top: 50px;
   line-height: 90px;
 }
@@ -312,18 +316,38 @@ header nav {
 
 .realLogo {
   padding-top: 100px;
-  padding-left: 400px;
 }
 
 .realPro {
   padding-top: 70px;
-  padding-left: 300px;
 }
 
 .realQr {
   position: absolute;
-  top: 50%;
-  right: 30%;
+  top: 27%;
+  right: calc((100% - 1200px)/2);
+  text-align: center;
+}
+
+.realQrText>h2 {
+  font-size: 41px;
+  padding-bottom: 8px;
+}
+
+.realQrText>h3 {
+  font-size: 35px;
+}
+
+.realQr>h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.realQrText>p {
+  font-size: 23px;
+  padding: 30px 0;
+  line-height: 150%;
 }
 
 /* layout - main - review */
@@ -374,7 +398,6 @@ header nav {
 
 .profit>h1 {
   font-size: 2rem;
-  padding-left: 370px;
   margin: 30px 0;
 }
 

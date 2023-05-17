@@ -331,19 +331,19 @@ main {
 }
 
 .notice>ul>li {
-  width: 340px;
+  width: calc((100% - 60px)/4);
 }
 
 .notImg {
   width: 100%;
-  height: 193px;
+  height: 190px;
   overflow: hidden;
 }
 
 .notImg img {
   width: 100%;
-  height: 193px;
-  object-fit: contain;
+  height: 190px;
+  object-fit: cover;
   transition: all 1s ease 0s;
 }
 
@@ -360,27 +360,30 @@ main {
 .notice h4 {
   font-weight: bold;
   font-size: 1.1rem;
-  padding-bottom: 150px;
 }
 
 /* --------footer-------- */
-.footMenu {
-  width: 1050px;
-  margin: 0 auto;
+footer {
+  margin-top: 200px;
+}
+
+.footMenu1 {
+  border-top: 1px solid #ebebeb;
+  margin-bottom: 50px;
 }
 
 .footMenu1>ul {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
   padding-top: 70px;
 }
 
 .footMenu1>ul>li {
-  width: 110px;
+  width: calc(100%/6);
 }
 
-.footMenu1>ul>li::first-line {
+.footMenu1>ul>li>a {
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -390,15 +393,25 @@ main {
   color: #888;
 }
 
+.footMenu1>ul>li>ul>li:hover {
+  color: #000;
+}
+
+.footMenu2 {
+  border-bottom: 1px solid #ebebeb;
+}
+
 .footMenu2>ul {
   display: flex;
-  padding: 70px 0;
+  width: 1120px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .footMenu2>ul>li {
   font-size: 1.1rem;
   font-weight: bold;
-  padding-right: 50px;
+  width: calc(100%/6);
 }
 
 .footMenu2>ul>li:nth-of-type(3) {
@@ -406,35 +419,45 @@ main {
 }
 
 .coInfo {
+  width: 1440px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  position: relative;
+  justify-content: space-between;
+  padding: 26px 0;
+}
+
+.coInfo:before {
+  content: "";
+  width: 138px;
 }
 
 .footLogo {
   display: flex;
+  align-items: center;
 }
 
-.footLogo img {
-  width: 130px;
-  object-fit: cover;
-  margin-right: 30px;
+.copy {
+  color: #9a9a9a;
+  margin-left: 36px;
+}
+
+.snsMenu {
+  width: 138px;
 }
 
 .snsMenu>ul {
   display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.snsMenu img {
-  width: 40px;
-  object-fit: cover;
+  justify-content: space-between;
 }
 
 .snsMenu>ul>li {
-  margin-right: 10px;
+  width: 38px;
+}
+
+.snsMenu>ul>li img {
+  width: 100%;
+}
+
+.footLogo img {
+  width: 120px;
 }
