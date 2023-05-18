@@ -26,7 +26,6 @@
 }
 
 .total {
-  width: 1910px;
   height: 970px;
   margin: 0 auto;
 }
@@ -37,34 +36,32 @@
 }
 
 /* layout */
-header img {
-  width: 200px;
-  object-fit: cover;
-}
-
+/* --------header--------- */
 header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 1000;
+  padding-top: 20px;
 }
 
 header:hover {
-  background: rgba(255, 255, 255, 0.774);
+  background: rgba(255, 255, 255, 0.85);
   height: 500px;
 }
 
+header img {
+  width: 180px;
+  object-fit: cover;
+}
+
 header nav {
-  width: 1440px;
-  padding-top: 20px;
-  margin: 0 auto;
   display: flex;
 }
 
 .headLeft {
-  width: 850px;
   display: flex;
   flex: 1;
 }
@@ -73,6 +70,7 @@ header nav {
   width: 100%;
   display: flex;
   position: relative;
+  height: 60px;
 }
 
 .gnb>li {
@@ -85,16 +83,23 @@ header nav {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 0 50px;
 }
 
 .gnb>li>ul {
   border: 1px solid red;
   display: flex;
   position: absolute;
-  top: 90px;
-  left: 80px;
-  width: 800px;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  pointer-events: none;
+  padding-top: 30px;
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+
+.gnb>li:hover ul {
+  pointer-events: auto;
 }
 
 .gnb>li>ul>li {
@@ -113,10 +118,10 @@ header nav {
 
 }
 
-/* menu animation */
+/* --------menu animation-------- */
 .gnb .cliStory ul {
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .gnb .cliStory:hover ul {
@@ -125,7 +130,7 @@ header nav {
 
 .gnb .skinCare ul {
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .gnb .skinCare:hover ul {
@@ -134,7 +139,7 @@ header nav {
 
 .gnb .makeUp ul {
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .gnb .makeUp:hover ul {
@@ -150,7 +155,7 @@ header nav {
   opacity: 1;
 }
 
-/* menu animation end */
+/*-------- menu animation end --------*/
 
 .headRight {
   border: 1px solid blue;
@@ -162,79 +167,78 @@ header nav {
   justify-content: flex-end;
 }
 
-/* layout - main */
+/* --------layout - main --------*/
 .videoBanner video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* layout - main - evenbetter */
+/* --------layout - main - evenbetter-------- */
 .evenBetter {
   border: 1px solid red;
-  position: relative;
 }
 
-.evenBetter:after {
-  content: "";
-  background: #eee;
-  position: absolute;
-  bottom: 0;
-  left: 16%;
-  width: 300px;
-  height: 400px;
+.evenBetter .contents {
+  border: 1px solid red;
+  position: relative;
 }
 
 .evenBetter h1 {
   font-size: 10rem;
   text-align: end;
   font-family: 'S-CoreDream8';
-  margin-right: 20px;
 }
 
-.evenBetter .evenModel img {
-  height: 850px;
+.evenProduct>img {
+  width: 18%;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  object-fit: cover;
-  float: right;
+  bottom: 10%;
+  left: 5%;
+  z-index: 1000;
 }
 
-.evenBetter .evenTexture img {
+.evenBetter .contents:after {
+  content: "";
+  background: #eee;
   position: absolute;
-  bottom: -8%;
-  left: 29%;
+  bottom: 10%;
+  left: 0;
   width: 300px;
-  object-fit: cover;
-  transform: rotate(-110deg);
+  height: 400px;
   z-index: 1;
 }
 
-.evenBetter .evenProduct img {
+.evenModel>img {
+  width: 60%;
+  transform: translate(90%, -10%);
+}
+
+.evenTexture>img {
   position: absolute;
-  top: 20%;
-  left: 20%;
-  height: 800px;
+  bottom: 10%;
+  left: 24%;
+  width: 13%;
   object-fit: cover;
-  z-index: 1;
+  transform: rotate(-120deg);
+  z-index: 1000;
 }
 
-.evenBetter .evenText {
+.evenText {
   border: 1px solid red;
   position: absolute;
-  top: 40%;
-  left: 35%;
+  top: 15%;
+  left: 26%;
   color: #333;
 }
 
-.evenProduct .evenText h4 {
+.evenText h4 {
   font-size: 25px;
   line-height: 160%;
   padding-bottom: 10%;
 }
 
-.evenProduct .evenText>p {
+.evenText>p {
   line-height: 170%;
   padding-bottom: 100px;
   font-size: 18px;
@@ -243,7 +247,6 @@ header nav {
 .barText>p {
   font-size: 18px;
 }
-
 
 /* layout - main - surge */
 .surge {
@@ -292,6 +295,7 @@ header nav {
 /* layout - main - bestNow */
 .bestNow {
   border: 1px solid blue;
+  overflow: hidden;
 }
 
 .bestItem {
