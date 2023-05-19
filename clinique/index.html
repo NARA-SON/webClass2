@@ -14,7 +14,7 @@
   <!-- header -->
   <header>
     <!-- header : menu -->
-    <nav class=contents>
+    <nav class="contents">
       <div class="headLeft">
         <h2>
           <img src="./img/logo(bar black).png" alt="크리니크로고">
@@ -115,10 +115,10 @@
           <li><a href="#">로그인</a></li>
           <li><a href="#">회원가입</a></li>
         </ul>
-        <ul class=myPage>
-          <li><a href="#">찾기</a></li>
-          <li><a href="#">장바구니</a></li>
-          <li><a href="#">마이페이지</a></li>
+        <ul class="myPage">
+          <li><a href="#"><img src="./img/ui_search.png" alt="찾기"></a></li>
+          <li><a href="#"><img src="./img/ui_shopping.png" alt="장바구니"></a></li>
+          <li><a href="#"><img src="./img/ui_mapage.png" alt="마이페이지"></a></li>
         </ul>
       </div>
     </nav>
@@ -132,7 +132,9 @@
     </div>
     <!-- main:page2 -->
     <div class="evenBetter total">
-      <h1>even better clinical</h1>
+      <div class="ebTitle">
+        <h1>even better<span>clinical</span></h1>
+      </div>
       <div class="contents">
         <div class="evenProduct">
           <img src="./img/page2_evenbetter.png" alt="evenbetterclinical">
@@ -155,19 +157,21 @@
     <!-- main:page3 -->
     <div class="surge total">
       <h1>moisture surge</h1>
-      <div class="surgeModel">
-        <img src="./img/page3_sulina.jpg" alt="써지설인아">
-      </div>
-      <div class="surgeProduct">
-        <img src="./img/page3_surge.jpg" alt="써지제품">
-      </div>
-      <div class="surgeTexture">
-        <img src="./img/page3_texture.png" alt="써지질감">
-      </div>
-      <div class="surgeText">
-        <p>더욱 촉촉하게, 크리니크 모이스춰라이저</p>
-        <p>뛰어난 수분감으로 사랑받는 크리니크의 모이스춰라이저를 확인해보세요</p>
-        <p>전체보기</p>
+      <div class="contents">
+        <div class="surgeProduct">
+          <img src="./img/page3_surge.jpg" alt="써지제품">
+        </div>
+        <div class="surgeTexture">
+          <img src="./img/page3_texture.png" alt="써지질감">
+        </div>
+        <div class="surgeModel">
+          <img src="./img/page3_sulina.jpg" alt="써지설인아">
+        </div>
+        <div class="surgeText">
+          <p>더욱 촉촉하게, 크리니크 모이스춰라이저</p>
+          <p>뛰어난 수분감으로 사랑받는 크리니크의 모이스춰라이저를 확인해보세요</p>
+          <p>전체보기</p>
+        </div>
       </div>
     </div>
     <!-- main:page4 -->
@@ -227,24 +231,26 @@
     </div>
     <!-- main:page6 -->
     <div class="review total">
-      <div class="reviewText">
-        <h4>REVIEW</h4>
-        <h4>EVENT</h4>
-        <p>공식몰에서 상품을 구매 후<br>
-          <span>리뷰를 작성해주신 모든 분들</span>께<br>
-          첫구매시 받을 수 있는 <span>“첫구매 혜택(15% 할인)”</span>을<br>
-          <span>한번 더</span> 드립니다!
-        </p>
-        <div class="reviewButton">
-          <p>리 뷰 작 성 하 기</p>
+      <div class="contents">
+        <div class="reviewText">
+          <h4>REVIEW</h4>
+          <h4>EVENT</h4>
+          <p>공식몰에서 상품을 구매 후<br>
+            <span>리뷰를 작성해주신 모든 분들</span>께<br>
+            첫구매시 받을 수 있는 <span>“첫구매 혜택(15% 할인)”</span>을<br>
+            <span>한번 더</span> 드립니다!
+          </p>
+          <div class="reviewButton">
+            <p>리 뷰 작 성 하 기</p>
+          </div>
         </div>
-      </div>
-      <div class="reviewImg">
-        <div class="reviewPhone">
-          <img src="./img/page6_review.png" alt="리뷰이벤트">
-        </div>
-        <div class="reviewSale">
-          <img src="./img/page6_review2.png" alt="15%할인">
+        <div class="reviewImg">
+          <div class="reviewPhone">
+            <img src="./img/page6_review.png" alt="리뷰이벤트">
+          </div>
+          <div class="reviewSale">
+            <img src="./img/page6_review2.png" alt="15%할인">
+          </div>
         </div>
       </div>
     </div>
@@ -275,51 +281,66 @@
           </li>
         </ul>
       </div>
-      <div class="newsletter">
-        <img src="./img/page7_bg.png" alt="뉴스레터 배경색">
+      <div class="newsletter total">
+        <div class="contents">
+          <img src="./img/page7_bg.png" alt="뉴스레터 배경색">
+          <div class="newsText">
+            <h1>뉴스레터</h1>
+            <p>뉴스레터 구독신청하고 혜택 알림받기</p>
+            <h2>구 독 신 청</h2>
+            <input type="checkbox" required>
+            <label>크리니크의 새로운 서비스, 신상품, 이벤트 정보 등<br> 마케팅 목적의 최신정보를 미리 받아보고 싶으시다면 선택해주세요.</label>
+          </div>
+        </div>
       </div>
     </div>
   </main>
   <!-- footer -->
   <footer>
-    <div class="footContainer">
-      <div class="footTop">
-        <div class="foot1">
-          <ul>
-            <li>매장찾기</li>
-            <li>고객센터 02-6971-3202</li>
-            <li>사이트맵</li>
-            <li>라이브 챗 상담하기</li>
-            <li>개인정보 처리 방침</li>
-            <li>FAQ</li>
-            <li>이용약관</li>
-          </ul>
+    <div>
+      <div class="contents">
+        <div class="footTop">
+          <div class="foot1">
+            <ul>
+              <li>매장찾기</li>
+              <li>고객센터 02-6971-3202</li>
+              <li>사이트맵</li>
+              <li>라이브 챗 상담하기</li>
+              <li>개인정보 처리 방침</li>
+              <li>FAQ</li>
+              <li>이용약관</li>
+            </ul>
+          </div>
+          <div class="foot2">
+            <ul>
+              <li>
+                <img src="./img/sns_kakao-talk.png" alt="">
+              </li>
+              <li>
+                <img src="./img/sns_youtube.png" alt="">
+              </li>
+              <li>
+                <img src="./img/sns_facebook.png" alt="">
+              </li>
+              <li>
+                <img src="./img/sns_instagram.png" alt="">
+              </li>
+            </ul>
+            <div class="assuar">
+              <img src="./img/footer.png" alt="품질보증">
+            </div>
+          </div>
         </div>
-        <div class="foot2">
-          <ul>
-            <li>
-              <img src="./img/sns_kakao-talk.png" alt="">
-            </li>
-            <li>
-              <img src="./img/sns_youtube.png" alt="">
-            </li>
-            <li>
-              <img src="./img/sns_facebook.png" alt="">
-            </li>
-            <li>
-              <img src="./img/sns_instagram.png" alt="">
-            </li>
-            <li class="assurance"><img src="./img/footer.png" alt="품질보증"></li>
-          </ul>
+        <div class="footlow">
+          <p>에스크로 가입확인</p>
+          <p>이엘씨에이한국(유) 대표 Teng, Hsiao-Hua, 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232</p>
+          <p>사업자등록번호 : 211-81-71889</p>
+          <p>통신판매업신고번호 : 강남-15737호</p>
+          <p>사업자정보조회</p>
+          <p>이메일 : consumercare@kr.clinique.com</p>
+          <p>호스팅서비스 사업자 : ㈜엘지유플러스</p><br>
+          <p>COPYRIGHT © Clinique Laboratories, llc. All Rights Reserved</p>
         </div>
-      </div>
-      <div class="footlow">
-        에스크로 가입확인
-        이엘씨에이한국(유) 대표 Teng, Hsiao-Hua, 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232
-        사업자등록번호 : 211-81-71889 통신판매업신고번호 : 강남-15737호 사업자정보조회
-        이메일 : consumercare@kr.clinique.com 호스팅서비스 사업자 : ㈜엘지유플러스
-
-        COPYRIGHT © Clinique Laboratories, llc. All Rights Reserved
       </div>
     </div>
   </footer>

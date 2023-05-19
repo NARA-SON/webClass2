@@ -42,7 +42,6 @@
     tag_a.style.border = "1px solid red"
     tag_a.style.borderTop = "10px solid blue"
   </script>
-  <!-- querySelector라는 메서드를 통해 a아이디 객체를 선택해서 문서형태로 남겨지고 스타일도 바꿔주었다. -->
 
   <ul class="list">
     <li>list1</li>
@@ -87,8 +86,8 @@
 
     let tagTitle = document.querySelector(".d")
     console.log(tagTitle.textContent)
-    tagTitle.innerText = "컨텐츠 <i>내용</i> 수정하기"
-    tagTitle.innerHTML = "컨텐츠 <i>내용</i> 수정하기"
+    tagTitle.innerText = "컨텐츠 <i>내용</i> 수정하기" //태그적용불가
+    tagTitle.innerHTML = "컨텐츠 <i>내용</i> 수정하기" //태그적용가능
   </script>
 
 </body>
