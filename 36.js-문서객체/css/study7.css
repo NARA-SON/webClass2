@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+}
+
+.tabMenu {
+  border: 1px solid #fff;
+  width: 400px;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  position: relative;
+}
+
+.tabMenu>dt {
+  border: 1px solid red;
+  width: 120px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.tabMenu>dt.on {
+  background: darkcyan;
+  color: white;
+}
+
+.tabMenu>dd {
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  display: none;
+}
+
+.tabMenu>dt.on+dd {
+  display: block;
+}

@@ -9,7 +9,6 @@ titleParent.style.border="1px solid blue"
 let ulTag = document.querySelector(".list")
 let list = ulTag.children
 
-
   for(let i=0;i<list.length;i++){
   list[i].style.borderBottom="1px solid black"
 }
