@@ -203,10 +203,7 @@ header nav {
 .evenBetter .contents {
   border: 1px solid red;
   position: relative;
-}
-
-.ebTitle {
-  transform: translateY(-65px);
+  height: 670px;
 }
 
 .ebTitle>h1 {
@@ -230,29 +227,51 @@ header nav {
 .evenProduct>img {
   width: 18%;
   position: absolute;
-  bottom: 25%;
-  left: 5%;
+  bottom: 0;
+  left: 3%;
   z-index: 1000;
 }
 
-.evenBetter .contents:after {
+.evenProduct:after {
   content: "";
   background: #eee;
   position: absolute;
-  bottom: 25%;
+  bottom: 0;
   left: 0;
   width: 300px;
   height: 200px;
 }
 
-.evenModel>img {
-  width: 60%;
-  transform: translate(90%, -20%);
+.evenText>h4 {
+  border: 1px solid red;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 1.3rem;
+  line-height: 170%;
+  z-index: 10000;
+}
+
+.evenText>p {
+  border: 1px solid red;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 10000;
+  line-height: 170%;
+}
+
+.evenText>a {
+  border: 1px solid red;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  z-index: 10000;
 }
 
 .evenTexture>img {
   position: absolute;
-  bottom: 25%;
+  bottom: 0;
   left: 24%;
   width: 13%;
   object-fit: cover;
@@ -260,53 +279,11 @@ header nav {
   z-index: 1000;
 }
 
-.evenText {
-  border: 1px solid red;
+.evenModel>img {
+  width: 60%;
   position: absolute;
-  top: 5%;
-  left: 26%;
-  color: #333;
-}
-
-.evenText h4 {
-  font-size: 25px;
-  line-height: 160%;
-  padding-bottom: 10%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  z-index: 1100000;
-}
-
-.evenText:after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 230px;
-  height: 20px;
-  background: #FED6FA;
-}
-
-.evenText>p {
-  line-height: 170%;
-  font-size: 18px;
-  width: 400px;
-  position: absolute;
-  top: 100px;
-  left: 1px;
-  z-index: 100000;
-}
-
-.evenText>p:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 230px;
-  height: 20px;
-  background: #FED6FA;
+  top: -10%;
+  right: -20%;
 }
 
 /* layout - main - surge */

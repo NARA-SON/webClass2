@@ -75,18 +75,20 @@ header {
   margin-bottom: 40px;
 }
 
-.mainBanner>dl {
+.mainBanner>dl.tabTop {
   width: 400px;
   height: 120px;
   position: relative;
 }
 
-.mainBanner>dl>dt {
+.mainBanner>dl.tabTop>dt {
   height: 30px;
   float: left;
   display: flex;
   align-items: center;
   padding: 0 10px;
+  cursor: pointer;
+  /* 마우스를 올렸을 때 커서모양으로 바꾸어 줌 */
 }
 
 .mainBanner>dl>dt.on {
@@ -160,6 +162,7 @@ header {
   padding: 0 14px;
   margin-right: 5px;
   background: #1c2566;
+  cursor: pointer;
 }
 
 .tabMenu>dt.on {

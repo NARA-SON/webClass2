@@ -24,6 +24,7 @@ dl>dt {
   display: flex;
   align-items: center;
   transition: all 0.5s ease 0s;
+  cursor: pointer;
 }
 
 dl>dt:first-of-type {

@@ -17,12 +17,15 @@ a {
 .btnMenu {
   border: 1px solid black;
   position: fixed;
+  /* 화면기준으로 띄워서 배치 */
   top: 10px;
   right: 10px;
   width: 30px;
   height: 30px;
   cursor: pointer;
+  /* 마우스를 올렸을 때 커서모양으로 */
   z-index: 1000;
+  /* z-index는 포지션이 적용되어 있을 때만 사용가능. 형제태그끼리 비교하는것을 원칙으로한다. */
 }
 
 .btnMenu>span {
@@ -30,11 +33,13 @@ a {
   height: 1px;
   background: black;
   display: block;
+  /*span은 inline이기 때문에, 박스형태가 아니라서, 가로세로 스타일 적용이 되지 않는다. 그래서 block으로 바꾸어준다. */
   margin: 6.7px auto;
   transform-origin: 0% center;
   transition: all 0.5s ease 0s;
 }
 
+/* 세줄박스에 close 클래스 더해졌을 때 */
 .btnMenu.close>span:nth-of-type(2) {
   opacity: 0;
 }
@@ -61,6 +66,7 @@ nav {
   /* transition: all 0.5s ease 0s; */
 }
 
+/* 메뉴에 show가 적용되었을 때 */
 nav.show {
   pointer-events: auto;
   opacity: 1;

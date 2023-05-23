@@ -14,18 +14,21 @@
   position: relative;
 }
 
+/* 주제태그 */
 .tabMenu>dt {
   border: 1px solid red;
   width: 120px;
-  cursor: pointer;
   height: 50px;
+  cursor: pointer;
 }
 
+/* 주제태그에 on클래스가 작동할 때 */
 .tabMenu>dt.on {
   background: darkcyan;
   color: white;
 }
 
+/* 하단 설명칸 디자인 */
 .tabMenu>dd {
   border: 1px solid red;
   position: absolute;
@@ -35,6 +38,7 @@
   display: none;
 }
 
+/* 주제태그에 on클래스가 작동할 때 형제 dd태그 디자인 */
 .tabMenu>dt.on+dd {
   display: block;
 }
