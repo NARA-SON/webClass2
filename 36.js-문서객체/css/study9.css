@@ -21,6 +21,7 @@ img {
   height: 600px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .train {
@@ -82,4 +83,34 @@ img {
 
 .slideTxt p {
   font-size: 0.4em;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  color: white;
+}
+
+.pagination>li {
+  border: 1px solid aqua;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.pagination>li:last-of-type {
+  margin-right: 0;
+}
+
+.pagination>li.on {
+  background: #fff;
+  opacity: 0.7;
 }

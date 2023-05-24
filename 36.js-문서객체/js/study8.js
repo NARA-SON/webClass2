@@ -9,8 +9,7 @@ window.onload=function(){
         eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`
     ,`<h3>title3</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe enim doloribus illo voluptas accusamus porro
-        eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`
-    ,`<p>아메리카노</p>`]
+        eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`]
 
   
   for (let i = 0; i < tabTitles.length; i++){

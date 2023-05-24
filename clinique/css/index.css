@@ -35,6 +35,13 @@
   margin: 0 auto;
 }
 
+.arrowBtn {
+  background: url(../img/under_bar.png) no-repeat 0 13px;
+  background-size: 70%;
+  width: 300px;
+  height: 50px;
+}
+
 /* layout */
 /* --------header--------- */
 header {
@@ -196,12 +203,7 @@ header nav {
 }
 
 /* --------layout - main - evenbetter-------- */
-.evenBetter {
-  border: 1px solid red;
-}
-
 .evenBetter .contents {
-  border: 1px solid red;
   position: relative;
   height: 670px;
 }
@@ -243,30 +245,46 @@ header nav {
 }
 
 .evenText>h4 {
-  border: 1px solid red;
   position: absolute;
   top: 10%;
   left: 25%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 170%;
   z-index: 10000;
 }
 
 .evenText>p {
-  border: 1px solid red;
   position: absolute;
   top: 25%;
   left: 25%;
-  z-index: 10000;
   line-height: 170%;
 }
 
 .evenText>a {
-  border: 1px solid red;
   position: absolute;
   top: 40%;
   left: 25%;
-  z-index: 10000;
+  display: block;
+}
+
+.evenText:before {
+  content: "";
+  background: #FED6FA;
+  width: 123px;
+  height: 11px;
+  position: absolute;
+  top: 210px;
+  left: 300px;
+}
+
+.evenText:after {
+  content: "";
+  background: #FED6FA;
+  width: 199px;
+  height: 14px;
+  position: absolute;
+  top: 89px;
+  left: 297px;
 }
 
 .evenTexture>img {
@@ -287,10 +305,6 @@ header nav {
 }
 
 /* layout - main - surge */
-.surge {
-  border: 1px solid blue;
-}
-
 .surge .contents {
   display: flex;
   justify-content: space-between;
@@ -312,14 +326,13 @@ header nav {
 
 .surgeModel:after {
   content: "";
-  border: 1px solid #ffa885de;
-  border-style: dotted;
-  border-width: 5px;
-  width: 390px;
-  height: 440px;
+  border: 1px dashed #ffa885de;
+  border-width: 3px;
+  width: 385px;
+  height: 436px;
   position: absolute;
-  top: -12px;
-  left: -12px;
+  top: -8px;
+  left: -8px;
 }
 
 .surgeProduct {
@@ -346,12 +359,12 @@ header nav {
   transform: rotate(-70deg);
   position: absolute;
   top: -30%;
-  left: 50%;
+  left: 45%;
 }
 
 .surgeText {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   right: 60px;
   line-height: 170%;
 }
@@ -362,7 +375,6 @@ header nav {
 
 /* layout - main - bestNow */
 .bestNow {
-  border: 1px solid blue;
   overflow: hidden;
 }
 
@@ -403,7 +415,6 @@ header nav {
 
 /* layout - main - reality */
 .reality {
-  border: 1px solid blue;
   position: relative;
 }
 
@@ -499,12 +510,23 @@ span {
 
 /* layout - main - benefit */
 .benefit {
-  border: 1px solid blue;
+  position: relative;
+}
+
+.benefit:after {
+  content: "";
+  background: #999;
+  width: 1540px;
+  height: 1px;
+  position: absolute;
+  top: 51px;
+  left: 351px;
 }
 
 .profit>h1 {
   font-size: 2rem;
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .profit>ul {
@@ -547,6 +569,9 @@ span {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsText>h1 {
@@ -555,9 +580,12 @@ span {
   margin-bottom: 30px;
 }
 
-.newsText>h2 {
+.newsText>a>h2 {
   font-size: 1.5rem;
   margin: 30px 0;
+  padding: 7px 30px;
+  color: white;
+  background: black;
 }
 
 .contents>.newsText>label {
@@ -566,7 +594,6 @@ span {
 
 /* footer */
 footer {
-  border: 1px solid blue;
   background: #eee;
   transform: translateY(400px);
   position: relative;
@@ -575,9 +602,9 @@ footer {
 footer>div:first-child:after {
   content: "";
   position: absolute;
-  top: 42%;
-  left: 12%;
-  width: 100%;
+  top: 48%;
+  left: 17%;
+  width: 82%;
   height: 1px;
   background: #9a9a9a;
 }
@@ -621,12 +648,23 @@ footer>div:first-child:after {
   right: 0;
 }
 
-
 .footlow {
   padding-bottom: 50px;
+  line-height: 170%;
 }
 
-.footlow>p {
-  font-size: 0.95rem;
-  line-height: 170%;
+.underLine {
+  text-decoration: underline;
+}
+
+.footlow2 {
+  display: flex;
+  width: 1200px;
+  height: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footlow2>p {
+  width: 400px;
 }

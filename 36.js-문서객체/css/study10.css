@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.swiper {
+  border: 1px solid red;
+  width: 700px;
+  height: 400px;
+}
