@@ -1,16 +1,45 @@
 window.onload = function () { 
-  let slider1 = new Swiper(".station1", {
+
+  let station1 = new Swiper('.station1', {
     loop: true,
-    slidesPerview: 1.5,
+    direction: 'horizontal',
+    // slidesPerView: 2.5, //슬라이드 개수의 반만큼 최대적용가능
+    // spaceBetween: 40,
     pagination: {
-        el: ".swiper-pagination",
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+        nextEl: ".csNextBtn",
+        prevEl: ".csPrevBtn",
       },
+    autoplay: {
+      delay: 1000,
+      // pauseOnMouseEnter:true,
+    },
+    speed: 2000,
+    breakpoints: {
+      320: {
+        slidesPerView:1,
+        spaceBetween:0,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView:3,
+        spaceBetween:20,
+      },
+    }
   })
 
-  let slider2 = new Swiper(".station2", { 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+  document.querySelector(".station1").addEventListener("mouseover", function () { 
+    station1.autoplay.stop()
   })
+  document.querySelector(".station1").addEventListener("mouseout", function () {
+    station1.autoplay.start()
+  })
+
 }

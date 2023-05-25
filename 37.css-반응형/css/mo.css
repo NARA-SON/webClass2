@@ -3,6 +3,8 @@
   /* 화면의 너비가 최대 767px 이하인 경우 적용될 스타일  */
   /* 디자인 할 때는 모바일 화면너비는 340px 기준으로 디자인한다. 되도록 작은사이즈로.. 크게 딱 맞춰 디자인하면 문제가 된다. 레이아웃이 흐트러질 수 있음. */
   .frame {
+    width: 90%;
+    margin: 0 auto;
     background: darkolivegreen;
     height: 700px;
   }
