@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: '나눔손글씨 혜준체';
-  src: url("../font/나눔손글씨\ 혜준체.ttf") format('woff');
+  font-family: 'Meramoon';
+  src: url("../font/Meramoon\ demo.otf") format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,7 @@
 }
 
 .total {
+  width: 1900px;
   height: 970px;
   margin: 0 auto;
 }
@@ -201,26 +202,25 @@ header nav {
 }
 
 .videoBanner h1 {
-  font-size: 5.1rem;
-  font-family: 'S-CoreDream8';
-  text-align: right;
+  font-size: 8rem;
+  font-family: 'Meramoon';
   position: absolute;
-  bottom: 16%;
-  right: 18%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100000;
-  line-height: 102%;
-  color: #00bcab69;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  color: #fff;
+  white-space: nowrap;
 }
 
 .videoBanner:after {
   content: "";
-  width: 255px;
-  height: 226px;
+  width: 100%;
+  height: 15%;
   position: absolute;
-  bottom: 13%;
-  right: 17%;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #ffffff5e;
 }
 
@@ -231,18 +231,16 @@ header nav {
 }
 
 .ebTitle>h1 {
-  font-size: 10rem;
+  font-size: 12rem;
   text-align: end;
-  font-family: 'S-CoreDream8';
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  font-family: 'Meramoon';
+  color: black;
 }
 
 .ebTitle>h1>span {
-  font-size: 10rem;
+  font-size: 12rem;
   text-align: end;
-  font-family: 'S-CoreDream8';
+  font-family: 'Meramoon';
   padding-left: 30px;
   color: #007F00;
   -webkit-text-stroke-width: 0px;
@@ -352,7 +350,7 @@ header nav {
 
 .surge>h1 {
   font-size: 12rem;
-  font-family: 'S-CoreDream8';
+  font-family: 'Meramoon';
 }
 
 .surgeModel {
@@ -365,13 +363,12 @@ header nav {
 
 .surgeModel:after {
   content: "";
-  border: 1px dashed #ffa885de;
-  border-width: 3px;
-  width: 385px;
-  height: 436px;
+  border: 1px solid #FFA785;
+  width: 374px;
+  height: 425px;
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: -7px;
+  left: 7px;
 }
 
 .surgeProduct {
@@ -599,7 +596,6 @@ span {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-family: '나눔손글씨 혜준체';
   font-size: 3rem;
   line-height: 100%;
 }
@@ -717,4 +713,132 @@ footer>div:first-child:after {
 
 .footlow2>p {
   width: 400px;
+}
+
+/* -------BRAND STORY-------- */
+/* common */
+.brandStory p {
+  font-size: 30px;
+}
+
+/* 1page */
+.brand-story {
+  background: #E8E8E8;
+  display: flex;
+}
+
+.brand-story>img {
+  width: 780px;
+}
+
+.brand-story>div {
+  border: 1px solid red;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+.brand-story h1 {
+  font-size: 10rem;
+  font-family: 'S-CoreDream5';
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.brand-story h2 {
+  font-size: 8rem;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.brand-story h3 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.brand-story>div>p {
+  margin: 30px 0;
+}
+
+/* 2page */
+.brand-story2 {
+  padding-top: 200px;
+}
+
+.brand-story2>.contents {
+  text-align: center;
+}
+
+.brand-story2>.contents>img {
+  width: 400px;
+}
+
+.brand-story2>.contents>p {
+  margin-bottom: 60px;
+  line-height: 160%;
+}
+
+/* 3page */
+.brand-story3>.contents {
+  padding-left: 200px;
+}
+
+.brand-story3>.contents>h1 {
+  font-size: 6rem;
+  line-height: 110%;
+}
+
+.brand-story3>.contents>ul {
+  display: flex;
+  padding-top: 50px;
+}
+
+.brand-story3>.contents>ul>li {
+  margin: 0 30px;
+  font-size: 30px;
+}
+
+.brand-story3>.contents>ul>li:first-of-type {
+  margin-left: 0;
+}
+
+.brand-story3>.contents>p {
+  padding: 50px 0;
+  line-height: 150%;
+}
+
+/* 4page */
+.brand-story4>.contents {
+  padding-left: 200px;
+}
+
+.brand-story4>.contents>h1 {
+  font-size: 6rem;
+}
+
+.brand-story4>.contents>p {
+  line-height: 150%;
+  margin: 50px 0;
+}
+
+/* 5page */
+.brand-story5>.contents>h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.brand-story5>.contents>ul {
+  display: flex;
+}
+
+.brand-story5>.contents>ul>li {
+  width: 250px;
+  height: 700px;
+}
+
+.brand-story5>.contents>ul>li>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

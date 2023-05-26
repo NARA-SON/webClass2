@@ -18,7 +18,7 @@ window.onload = function () {
       delay: 1000,
       // pauseOnMouseEnter:true,
     },
-    speed: 2000,
+    speed: 1000,
     breakpoints: {
       320: {
         slidesPerView:1,
