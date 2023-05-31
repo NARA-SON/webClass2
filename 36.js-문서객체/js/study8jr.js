@@ -1,9 +1,4 @@
-window.onload = function () {
-  
-
-  let tabTitles = document.querySelectorAll(".tabTit>li")
-  let tabDes= document.querySelector(".tabDes")
-  let tabDescription = [`<h3>title1</h3>
+let tabDescription = [`<h3>title1</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe enim doloribus illo voluptas accusamus porro
         eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`
     ,`<h3>title2</h3>
@@ -11,19 +6,17 @@ window.onload = function () {
         eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`
     ,`<h3>title3</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe enim doloribus illo voluptas accusamus porro
-        eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit?</p>`]
+        eligendi minima reprehenderit quae, aperiam quasi sunt eum quas impedit tempore accusantium nihil rem velit ?</p > `]
+        
+$(document).ready(function () { 
 
-  
-  for (let i = 0; i < tabTitles.length; i++){
-    tabTitles[i].addEventListener("click",function(){
-      for (let j = 0; j < tabTitles.length; j++) {
-        tabTitles[j].classList.remove("on")
-      }
-      this.classList.add("on")
+  $(".tabTit>li").click(function () { 
 
-      tabDes.innerHTML = tabDescription[i]
-    })
-  }
+    $(".tabTit>li").removeClass("on")
+    $(this).addClass("on")
+    let idx = $(this).index()
+    //index()함수는 앞에 선택된 태그의 부모태그기준 순번을 리턴함
+    $(".tabDes").html(tabDescription[idx])
+  })
 
-  
-}
+})

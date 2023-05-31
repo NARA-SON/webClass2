@@ -7,9 +7,10 @@ $(document).ready(function(){
 
 $(".naverLink").attr("href","http://www.naver.com")
 let link = $(".naverLink").attr("href")
-console.log(link)
-
+  console.log(link)
+  
 $(".textframe>p:nth-of-type(1)").html("<i>text()함수</i>는 선택한 태그의 안에 들어가는 내용을 새로운 내용으로 교체할 수 있다.")
+// document.querySelector(".textframe").children[0].innerHTML="<i>text()함수</i>는 선택한 태그의 안에 들어가는 내용을 새로운 내용으로 교체할 수 있다."
 
 let textP = $(".textframe>p:nth-of-type(2)").text()
 console.log(textP)
@@ -31,7 +32,9 @@ $(".list").children().css("color","blue")
 
 $(".list>li").parent().css("background","skyblue")
 $(".list>li:nth-of-type(2)").next().css("text-align","center")
-$(".list>li:nth-of-type(2)").prev().css("text-align","right")
+  $(".list>li:nth-of-type(2)").prev().css("text-align", "right")
+  
+let num = Number(prompt("몇번째 리스트를 활성화 시키실래요?"))
 
 $(".listNum>li").eq(0).css("color","red")
 
