@@ -50,7 +50,4 @@ $(document).ready(function () {
     $(".train").css("transform", "translateX(-" + (idx * 25) + "%)")
   }
 
-
-
-
 })

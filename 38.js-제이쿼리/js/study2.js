@@ -16,9 +16,9 @@ let textP = $(".textframe>p:nth-of-type(2)").text()
 console.log(textP)
 
 $("#a").addClass("on")
-document.querySelector("#a")?.classList.add("on")
+document.querySelector("#a").classList.add("on")
 $("#a").removeClass("on")
-document.querySelector("#a")?.classList.remove("on")
+document.querySelector("#a").classList.remove("on")
 
 
 $(".list>li").css("border-bottom","1px solid black")
