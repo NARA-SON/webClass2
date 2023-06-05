@@ -129,32 +129,19 @@ nav>.gnb {
   display: block;
 }
 
-/* .gnb>li:hover ul {
-  opacity: 1;
-  pointer-events: auto;
-} */
+.gnb>li>.gnb2dep>ul {
+  display: flex;
+}
 
-/* .gnb>li>ul>li {
+.gnb>li>.gnb2dep>ul>li {
   width: calc(100%/4 - 20px);
   margin-right: 20px;
   border: 1px solid blue;
 }
 
-.gnb>li>ul>li:last-of-type {
+.gnb>li>.gnb2dep>ul>li:last-of-type {
   margin-right: 0;
 }
-
-.gnb>li>div>p {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-
-.gnb>li:hover div>p {
-  opacity: 1;
-} */
 
 /* 3뎁스 */
 .gnb>li>ul>li>ul>li {
