@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'GowunBatang-Regular';
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrap>section {
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.btnMenu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 5px 20px;
+  background: pink;
+  color: black;
+  cursor: pointer;
+}
+
+nav {
+  border: 1px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+
+  transform: translateX(-100%);
+  transition: all 0.7s ease 0s;
+}
+
+nav.on {
+  transform: translateX(0%);
+}
+
+.gnb>li {
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.7s ease 0s;
+}
+
+.gnb>li>a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+}
+
+.gnb ul>li {
+  height: 50px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.gnb ul {
+  background: pink;
+}

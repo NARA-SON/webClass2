@@ -3,8 +3,8 @@ window.onload = function () {
   let newsSlider = new Swiper(".news_station", {
     
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
+      el: '.news-pagination',
+      clickable: true,
     },
     
     breakpoints: {
@@ -18,21 +18,23 @@ window.onload = function () {
 
   });
 
-  let noticeSlider = new Swiper(".notice", {
-    
-    pagination: {
-      el: '.swiper-pagination2',
-      // type: 'bullets',
-    },
+  let noticeSlider = new Swiper(".notice_station", {
     
     breakpoints: {
       280: {
         slidesPerView: 1
       },
       768: {
-        slidesPerView: 4
+        slidesPerView: 4,
+        spaceBetween: 20
       }
-    }
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    
 
   });
 

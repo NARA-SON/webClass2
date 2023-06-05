@@ -317,15 +317,7 @@
   .notice {
     border: 1px solid red;
     width: 90%;
-  }
-
-  .notice>ul>li {
-    width: 80%;
     margin: 0 auto;
-  }
-
-  .notice li figure {
-    border: 1px solid orange;
   }
 
   .notice li figure img {
@@ -344,12 +336,17 @@
     font-weight: bold;
   }
 
-  .notice .swiper-pagination2 {
+  .notice .notice_pagination {
     position: relative;
     border: 1px solid red;
     margin-top: 50px;
     display: flex;
     justify-content: center;
+  }
+
+  /* active 클래스 bullet 스타일넣어주기 */
+  span.swiper-pagination-bullet-active {
+    background: black;
   }
 
   footer {

@@ -7,7 +7,8 @@ $(".textFrame").css("margin","20px 0")
   
   $(".btn1").css("border", "1px solid black").css("padding", "5px 20px").css("background","pink")
 
-  $(".btn1").click(function () { 
+  $(".btn1").click(function (e) {
+    e.preventDefault() //선택한 태그가 갖는 기본기능을 억제함.
     $(".textFrame").css("background", "pink").css("color","black")
   })
 
