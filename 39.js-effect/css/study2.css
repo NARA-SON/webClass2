@@ -1,0 +1,22 @@
+* {
+  color: white;
+  background: black;
+}
+
+.box {
+  border: 1px solid white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: rgb(236, 85, 111);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

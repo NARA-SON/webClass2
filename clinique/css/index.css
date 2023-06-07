@@ -114,13 +114,13 @@ nav>.gnb {
 .gnb>li>.gnb2dep {
   position: absolute;
   top: 50px;
-  left: 1px;
+  left: 0;
   display: flex;
   width: 100%;
   opacity: 1;
   transition: all 0.5s ease 0s;
-  pointer-events: none;
-  padding-top: 60px;
+  /* pointer-events: none; */
+  padding-top: 30px;
   border: 1px solid red;
   display: none;
 }
@@ -144,14 +144,20 @@ nav>.gnb {
 }
 
 /* 3뎁스 */
-.gnb>li>ul>li>ul>li {
+.gnb2dep>ul>li {
   border: 1px solid red;
   margin: 5px 0;
 }
 
 /* 4뎁스 */
-.gnb>li>ul>li>ul>li>ul>li {
+.gnb2dep>ul>li>ul>li {
   border: 1px solid green;
+  margin: 5px 0;
+}
+
+/* 5뎁스 */
+.gnb2dep>ul>li>ul>li>ul>li {
+  border: 1px solid yellow;
   margin: 5px 0;
 }
 
@@ -197,7 +203,7 @@ nav>.gnb {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  z-index: 100000;
+  z-index: 10;
   color: #fff;
 }
 
@@ -214,7 +220,7 @@ nav>.gnb {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10000000;
+  z-index: 1000;
 }
 
 .evenProduct>img {

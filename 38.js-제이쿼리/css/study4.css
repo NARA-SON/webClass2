@@ -1,0 +1,19 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: black;
+    color: white;
+  }
+
+  .contents>div {
+    height: 1000px;
+    border: 1px solid white;
+  }
+
+  body.dark {
+    background: skyblue;
+    color: black;
+  }

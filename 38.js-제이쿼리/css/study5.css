@@ -1,0 +1,15 @@
+* {
+  color: white;
+  background: black;
+}
+
+.box {
+  border: 1px solid pink;
+  width: 200px;
+  height: 200px;
+}
+
+.wrap>div {
+  border: 1px solid skyblue;
+  height: 1000px;
+}
