@@ -8,6 +8,13 @@
   <title>Clinique Official Site</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/reset.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./js/common.js"></script>
+
+  <!-- swiper연결 -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 </head>
 
 <body>
@@ -172,63 +179,62 @@
       </div>
     </div>
     <!-- main:page4 -->
-    <div class="bestNow">
+    <div class="bestNow swiper">
       <div class="bestText">
         <h4>THE BEST<br>NOW</h4>
       </div>
-      <ul class="bestItem">
-        <li>
+      <ul class="bestItem swiper-wrapper">
+        <li class="swiper-slide">
           <img src="./img/page4_cheekpop.png" alt="치크팝">
           <h5>치크 팝</h5>
           <p>33,000</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_cream.png" alt="썬크림">
           <h5>이븐 베터 다크 스팟 디펜스 SPF50 / PA++++</h5>
           <p>54,000</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_evenbetter.png" alt="이븐베러">
           <h5>이븐 베터 크리니컬 다크 스팟 코렉터</h5>
           <p>143,000</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_surge.png" alt="모이스춰써지">
           <h5>모이스춰 써지 100시간 오토-리플레니싱 하이드레이터</h5>
           <p>58,000원</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_lotion.png" alt="클래리파잉">
           <h5>클래리파잉 로션 트와이스 어 데이 엑스폴리에이터 2</h5>
           <p>52,000원</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_intense.png" alt="하이드레이터">
           <h5>모이스춰 써지 인텐스 72시간 리피드-리플레니싱 하이드레이터</h5>
           <p>58,000원</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_gel.png" alt="">
           <h5>드라마티컬리 디퍼런트 모이스춰라이징 젤</h5>
           <p>55,000원</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_lotion2.png" alt="">
           <h5>안티-블레미쉬 솔루션 클래리파잉 로션</h5>
           <p>37,000원</p>
         </li>
-        <li>
+        <li class="swiper-slide">
           <img src="./img/page4_surge2.png" alt="">
           <h5>모이스춰 써지 하이드레이팅 수퍼차지드 컨센트레이트</h5>
           <p>63,000원</p>
         </li>
       </ul>
+      <div class="swiper-pagination"></div>
     </div>
     <!-- main:page5 -->
     <div class="reality contents">
-      <div class="realLogo">
-        <img src="./img/page5_logo.png" alt="로고">
-      </div>
+      <h1>피부진단 서비스</h1>
       <div class="realPro">
         <img src="./img/page5_product.png" alt="로고">
       </div>

@@ -13,6 +13,7 @@
   font-style: normal;
 }
 
+/* 편집디자인 글씨체 */
 @font-face {
   font-family: 'Meramoon';
   src: url("../font/Meramoon demo.otf") format('woff');
@@ -20,6 +21,7 @@
   font-style: normal;
 }
 
+/* 쿠폰 글씨체 */
 @font-face {
   font-family: 'GowunBatang-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -33,7 +35,8 @@
 }
 
 main>div {
-  height: 100vh;
+  width: 100%;
+  height: 960px;
 }
 
 .contents {
@@ -214,7 +217,8 @@ nav>.gnb {
 
 .ebTitle>h1 {
   font-family: 'Meramoon';
-  font-size: 7em;
+  font-size: 150px;
+  white-space: nowrap;
   text-align: end;
   color: black;
   position: absolute;
@@ -299,7 +303,7 @@ nav>.gnb {
 .evenModel>img {
   width: 600px;
   position: absolute;
-  bottom: 0;
+  bottom: 126px;
   right: 0;
   transform: scale(1);
   transition: all 0.5s ease 0s;
@@ -312,34 +316,33 @@ nav>.gnb {
 /* layout - main - surge */
 .surge {
   position: relative;
-  border: 1px solid red;
 }
 
 .surge>h1 {
-  font-size: 7rem;
+  font-size: 150px;
   font-family: 'Meramoon';
 }
 
 .surgeModel img {
   width: 375px;
   position: absolute;
-  top: 0;
+  top: 200px;
   right: 0;
 }
 
 .surgeModel:after {
   content: "";
   border: 1px solid #ffa885de;
-  width: 385px;
-  height: 436px;
+  width: 375px;
+  height: 428px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 189px;
+  right: 6px;
 }
 
 .surgeProduct img {
   width: 570px;
-  transform: translateY(10%);
+  transform: translateY(18%);
 }
 
 .surgeProduct:after {
@@ -348,21 +351,21 @@ nav>.gnb {
   width: 570px;
   height: 540px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 277px;
+  left: -10px;
 }
 
 .surgeTexture img {
-  width: 400px;
+  width: 350px;
   transform: rotate(-70deg);
   position: absolute;
-  top: 0;
-  left: 45%;
+  top: 71px;
+  left: 48%;
 }
 
 .surgeText {
   position: absolute;
-  bottom: 0;
+  bottom: 120px;
   right: 60px;
   line-height: 170%;
 }
@@ -421,8 +424,9 @@ nav>.gnb {
   position: relative;
 }
 
-.realLogo {
+.reality>h1 {
   padding-top: 100px;
+  font-size: 2rem;
 }
 
 .realPro {
@@ -599,12 +603,6 @@ span {
 /* -------BRAND STORY-------- */
 /* -------BRAND STORY-------- */
 /* -------BRAND STORY-------- */
-/* common */
-.brandStory p {
-  font-size: 25px;
-  line-height: 170%;
-}
-
 /* 1page */
 .brand-story {
   background: #E8E8E8;
@@ -748,10 +746,6 @@ h3 {
 }
 
 /* 5page */
-.brand-story5 {
-  height: 100%;
-}
-
 .brand-story5>h1 {
   font-size: 2rem;
   text-align: center;
@@ -929,8 +923,8 @@ h3 {
 /* 3STEP */
 .step {
   background: url(../img/step/3step.jpg) no-repeat 70% 50%;
-  background-size: 600px auto;
-  border: 1px solid red;
+  background-size: 600px;
+  border: 1px solid transparent;
 }
 
 .step>div {
@@ -939,7 +933,7 @@ h3 {
 }
 
 .step>div>h3 {
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 9px;
 }
 
@@ -981,6 +975,70 @@ h3 {
 }
 
 .step1_text>p {
+  line-height: 180%;
+}
+
+/* step2 */
+.step2 {
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.step2>ul {
+  display: flex;
+  margin-left: 300px;
+  border: 1px solid red;
+}
+
+.step2>ul>li {
+  display: flex;
+}
+
+.step2_text {
+  width: 500px;
+  height: 300px;
+  border: 1px solid red;
+  transform: translateY(100%);
+}
+
+.step2_text>h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.step2_text>p {
+  line-height: 180%;
+}
+
+/* step3 */
+.step3 {
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.step3>ul {
+  display: flex;
+  margin-left: 300px;
+  border: 1px solid red;
+}
+
+.step3>ul>li {
+  display: flex;
+}
+
+.step3_text {
+  width: 500px;
+  height: 300px;
+  border: 1px solid red;
+  transform: translateY(100%);
+}
+
+.step3_text>h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.step3_text>p {
   line-height: 180%;
 }
 
