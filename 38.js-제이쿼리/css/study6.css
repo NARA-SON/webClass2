@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+} */
+
+ul,
+ol {
+  list-style: none;
+}
+
+.wrap>div {
+  height: 100vh;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.wrap>div:nth-of-type(1) {
+  background: rgb(0, 0, 58);
+}
+
+.wrap>div:nth-of-type(2) {
+  background: darkcyan;
+}
+
+.wrap>div:nth-of-type(3) {
+  background: darkkhaki;
+}
+
+.wrap>div:nth-of-type(4) {
+  background: darkolivegreen;
+}
+
+.wrap>div:nth-of-type(5) {
+  background: black;
+}
+
+.wrap>.con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.con1 p {
+  font-size: 0.3em;
+  letter-spacing: 15px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.con2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pList {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.pList>li {
+  transform: translateY(50px);
+  opacity: 0.1;
+}
+
+.pList>li:nth-of-type(1) {
+  transition: all 0.5s ease 0s;
+}
+
+.pList>li:nth-of-type(2) {
+  transition: all 0.5s ease 0.25s;
+}
+
+.pList>li:nth-of-type(3) {
+  transition: all 0.5s ease 0.5s;
+}
+
+.pList>li:nth-of-type(4) {
+  transition: all 0.5s ease 0.75s;
+}
+
+.con2.on .pList>li {
+  transform: translateY(0px);
+  opacity: 1;
+}

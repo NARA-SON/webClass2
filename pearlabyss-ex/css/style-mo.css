@@ -260,7 +260,6 @@
 
   .news .swiper-pagination {
     position: relative;
-    border: 1px solid red;
     margin-top: 50px;
   }
 
@@ -272,14 +271,18 @@
 
   /* culture */
   .culture {
-    width: 100vw;
-    margin-bottom: 100px;
+
+    width: 100%;
+    margin-bottom: 160px;
   }
+
+  .culture>ul {}
 
   .culture>ul>li {
     position: relative;
-    height: 220px;
+    height: 230px;
     overflow: hidden;
+    /* width:20%; */
     margin-bottom: 1px;
   }
 
@@ -290,40 +293,66 @@
 
   .culture>ul>li>a>img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+
+
   }
 
   .floatingBox {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 50%;
+    transform: translateX(-50%)translateY(50%);
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 10px black;
   }
 
   .floatingBox>h4 {
-    font-size: 2em;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 18px;
+
   }
 
   .floatingBox>p {
-    font-size: 1.3em;
+    padding-top: 30px;
+    position: relative;
+
   }
 
-  /* swiper */
+  .floatingBox>p:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+  }
+
   .notice {
-    border: 1px solid red;
+
     width: 90%;
     margin: 0 auto;
+  }
+
+
+  .notice li figure {
+    height: 190px;
+    overflow: hidden;
   }
 
   .notice li figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.5s ease 0s;
+  }
+
+  .notice li:hover figure img {
+    transform: scale(1.2);
   }
 
   .notice li p {
@@ -338,13 +367,9 @@
 
   .notice .notice_pagination {
     position: relative;
-    border: 1px solid red;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    border: 1px solid blue;
   }
 
-  /* active 클래스 bullet 스타일넣어주기 */
   span.swiper-pagination-bullet-active {
     background: black;
   }
