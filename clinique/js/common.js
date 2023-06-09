@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // --------  Header Scroll bar
+  // --------헤더 스크롤바 부드럽게
   $(window).scroll(function(){
   let winTop = $(window).scrollTop()
   if (winTop >= 400) {
@@ -11,7 +11,7 @@ $(document).ready(function(){
   }
   })
 
-  // -------- Total Scroll Bar
+  // -------전체 스크롤바 부드럽게
   $("main>div").on("wheel DOMMouseScroll", function (event) { 
     
     let E = event.originalEvent
@@ -32,7 +32,7 @@ $(document).ready(function(){
       return false
   })
 
-  // --------  Main - BestNow Slider 
+  // -------베스트셀러 슬라이더 효과적용
     let bestNow = new Swiper('.bestNow', {
     loop: true,
     direction: 'horizontal',
@@ -49,13 +49,22 @@ $(document).ready(function(){
       },
       1024: {
         slidesPerView:5,
-        spaceBetween:10,
+        spaceBetween:20,
       },
-      }
+    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
       },
+    on: {
+      slideChange: function () {
+        console.log(bestNow.realIndex) 
+        $(".bestItem>li").removeClass("inActive");
+        $(".bestItem>li").eq(bestNow.realIndex).addClass("inActive")
+        $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
+      }
+    }
+    
     
     })
 
@@ -65,5 +74,17 @@ $(document).ready(function(){
   $(".bestNow").mouseout(function () {
     bestNow.autoplay.start()
   })
+
+    // TOP버튼
+  $(".btnTop").click(function () { 
+    $("html, body")
+      .animate({ scrollTop: 0 }, 1000)
+  })
+
+  
+
+
+
+
 
 })
