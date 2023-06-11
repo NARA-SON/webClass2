@@ -963,13 +963,13 @@ h3 {
 }
 
 .moisture_surge2>div>.ms_intro {
-  width: 100%;
-  position: relative;
+  /* width: 400px; */
+  /* position: relative; */
   border: 1px solid red;
 }
 
 .moisture_surge2>div>.ms_intro>li {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
 }
@@ -977,7 +977,7 @@ h3 {
 .ms_intro>li>h3 {
   font-size: 1.3em;
   line-height: 150%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .ms_intro>li>p {

@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
   $(".list>li").addClass("mrtl")
-
-  $(".list>li")each(function(){
+  $(".list>li").each(function(){
     let result = Math.round(Math.random())
     if(result)
     {$(this).addClass("mltr")}

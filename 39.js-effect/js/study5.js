@@ -26,24 +26,5 @@ $(document).ready(function () {
       ("transform", "translateX(" + (-20 * idx) + "%)")
   }
   // moveSlider(3)
-  
-  // function introduce(name,age) { 
-  //   alert("안녕하세요 "+name+"입니다"+age+"살입니다.")
-  // }
-
-  // // introduce("손나라",33)
-  // // introduce("정현진", 38)
-  
-  // function intro(person) { 
-  //   alert("저의 이름은 "+person.name+"이고 나이는 "+person.age+"살입니다.")
-  // }
-
-  // intro({
-  //   name: "손나라",
-  //   age: 33
-  // })
-
-  // intro({name:"정현진",age:38})
-  
 
 })
