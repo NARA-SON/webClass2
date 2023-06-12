@@ -214,7 +214,6 @@ nav>.gnb {
 }
 
 .videoBanner h1 {
-  border: 1px solid red;
   width: 1200px;
   font-size: 8em;
   font-family: 'Meramoon';
@@ -232,18 +231,18 @@ nav>.gnb {
 /* --------layout - main - evenbetter-------- */
 .evenBetter {
   position: relative;
+  overflow: hidden;
 }
 
-.ebTitle>h1 {
-  font-family: 'Meramoon';
+.evenBetter>h1 {
   font-size: 150px;
-  white-space: nowrap;
-  text-align: end;
-  padding-top: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+  font-family: 'Meramoon';
+  transform: translateX(100%);
+  transition: all 8s ease 0s;
+}
+
+.evenBetter>.mrtl.on {
+  transform: translateX(0%);
 }
 
 .evenProduct>img {
@@ -322,7 +321,7 @@ nav>.gnb {
 .evenModel>img {
   width: 600px;
   position: absolute;
-  bottom: 126px;
+  bottom: 10%;
   right: 0;
   transform: scale(1);
   transition: all 0.5s ease 0s;
@@ -340,6 +339,12 @@ nav>.gnb {
 .surge>h1 {
   font-size: 150px;
   font-family: 'Meramoon';
+  transform: translateX(-100%);
+  transition: all 8s ease 0s;
+}
+
+.surge>.mltr.on {
+  transform: translateX(0);
 }
 
 .surgeModel img {
@@ -412,17 +417,18 @@ nav>.gnb {
 } */
 .bestItem>li {
   transition: all 0.5s ease 0s;
+  word-break: keep-all;
 }
 
 .bestItem>li.inActive {
   opacity: 0.5;
+  transform: scale(80%) translateY(-5%);
 }
 
 .bestItem>li>img {
   border-bottom: 1px solid #FAD5C9;
   width: 100%;
   height: 440px;
-  /* margin-right: 50px; */
   object-fit: contain;
 }
 
@@ -501,29 +507,30 @@ nav>.gnb {
   margin-top: 150px;
 }
 
-.reviewText>p>span {
-  color: #7041E5;
-}
-
-.reviewText {
+.reviewText>div {
   padding-top: 30px;
 }
 
-.reviewText>h4 {
+.reviewText>div>h4 {
   font-size: 5.9rem;
   color: #7041E5;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   line-height: 95%;
 }
 
-.reviewText>h4:nth-of-type(2) {
-  padding: 0 120px;
+.reviewText>div p,
+span {
+  line-height: 170%;
+  font-size: 1.1rem;
 }
 
-.reviewText>p span {
-  line-height: 170%;
-  padding: 70px 0;
-  font-size: 1.1rem;
+.reviewText>div>h4:nth-of-type(2) {
+  padding: 0 120px;
+  padding-bottom: 70px;
+}
+
+.reviewText>div>p span {
+  color: #7041E5;
 }
 
 .reviewSale>img {
@@ -532,8 +539,8 @@ nav>.gnb {
   left: 47%;
 }
 
-.reviewButton>p {
-  font-size: 1.1rem;
+.reviewBtn {
+  margin-top: 70px;
 }
 
 /* layout - main - benefit */
@@ -672,6 +679,10 @@ nav>.gnb {
 /* -------BRAND STORY-------- */
 /* -------BRAND STORY-------- */
 /* 1page */
+.bs_total p {
+  font-size: 20px;
+}
+
 .brand-story {
   background: #E8E8E8;
   display: flex;
@@ -705,11 +716,13 @@ h3 {
 .brand-story h3 {
   font-size: 6rem;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .brand-story>div>p {
   margin: 40px 0;
-  font-size: 20px;
+  line-height: 180%;
+  font-size: 24px;
 }
 
 /* 2page */
@@ -957,27 +970,37 @@ h3 {
   font-size: 1.2em;
 }
 
-.moisture_surge2>div {
+.msul {
   display: flex;
   margin-left: 300px;
+  position: relative;
 }
 
-.moisture_surge2>div>.ms_intro {
-  /* width: 400px; */
-  /* position: relative; */
-  border: 1px solid red;
+.ms_intro {
+  width: 400px;
+  height: 400px;
+  position: relative;
 }
 
-.moisture_surge2>div>.ms_intro>li {
-  /* position: absolute; */
-  top: 0;
+.ms_intro>* {
+  width: 400px;
+}
+
+.ms_intro>li {
+  position: absolute;
+  bottom: 0;
   left: 0;
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.ms_intro>li.on {
+  opacity: 1;
 }
 
 .ms_intro>li>h3 {
   font-size: 1.3em;
   line-height: 150%;
-  /* margin-bottom: 30px; */
 }
 
 .ms_intro>li>p {
@@ -989,19 +1012,21 @@ h3 {
   color: #22D3D6;
 }
 
-
-.moisture_surge2>div>.ms_img {
+.ms_img {
   display: flex;
-  border: 1px solid green;
-  transform: translateX(30%);
+  margin-left: 400px;
 }
 
-.moisture_surge2>div>.ms_img>li {
-  border: 1px solid red;
-}
-
-.moisture_surge2>div>.ms_img>li>img {
+.ms_img img {
   width: 400px;
+}
+
+.msBtn {
+  position: absolute;
+  bottom: 40%;
+  right: 50%;
+  border: 1px solid red;
+  cursor: pointer;
 }
 
 /* 3STEP */
@@ -1045,35 +1070,35 @@ h3 {
 }
 
 /* 3STEP - page(2)*/
-.step1,
-.step2,
-.step3 {
+.step1ul,
+.step2ul,
+.step3ul {
   overflow: hidden;
   border: 1px solid blue;
   box-sizing: border-box;
   position: relative;
 }
 
-.step1>h1>img,
-.step2>h1>img,
-.step3>h1>img {
+.step1ul>h1>img,
+.step2ul>h1>img,
+.step3ul>h1>img {
   position: absolute;
   top: 8%;
   left: 20%;
 }
 
-.step1>ul,
-.step2>ul,
-.step3>ul {
+.step1ul>ul,
+.step2ul>ul,
+.step3ul>ul {
   display: flex;
   margin-left: 200px;
   border: 1px solid red;
   margin-top: 150px;
 }
 
-.step1>ul>li,
-.step2>ul>li,
-.step3>ul>li {
+.step1ul>ul>li,
+.step2ul>ul>li,
+.step3ul>ul>li {
   display: flex;
   border: 1px solid green;
 }
@@ -1102,7 +1127,7 @@ h3 {
   word-break: keep-all;
 }
 
-.step1 {
+.step1ul {
   background: url(../img/step/step1.png) no-repeat 20% 0;
 }
 

@@ -6,13 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinique Moistrure Surge</title>
+
+  <!-- css 연결 -->
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- 제이쿼리 자바스크립트 연결 -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="./js/common.js"></script>
 </head>
 
 <body>
+  <div class="btnTop"><img src="./img/up-arrow.png" alt="TOP이동"></div>
   <!-- header -->
   <header>
     <!-- header : menu -->
@@ -143,9 +148,9 @@
       <p>건조한 피부에 차오르는 핑크빛 수분 충전<br>
         촉각적인 수분감을 경험해보세요<br>
         낮에도 밤에도 <span>moisture surge</span>와 함께 촉촉한 피부를 유지하세요.</p>
-      <div>
-        <ul class="ms_intro">
-          <li>
+      <div class="msul station">
+        <ul class="ms_intro train">
+          <li class="on">
             <h3>모이스춰 써지 100시간<br>
               오토-리플레니싱 하이드레이터</h3>
             <p>크리니크의 가장 진화된 5세대 핑크 수분 크림<br>
@@ -184,7 +189,7 @@
             </p>
           </li>
         </ul>
-        <ul class="ms_img">
+        <ul class="ms_img train">
           <li>
             <img src="./img/surge/msh.png" alt="msh">
           </li>
@@ -201,13 +206,14 @@
             <img src="./img/surge/mse.png" alt="mse">
           </li>
         </ul>
+        <div class="msBtn">Next</div>
       </div>
     </div>
   </main>
   <!-- footer -->
   <footer>
     <div>
-      <div class="footTop">
+      <div class=" footTop">
         <div class="foot1">
           <ul>
             <li>매장찾기</li>

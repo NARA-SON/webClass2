@@ -2,19 +2,20 @@ $(document).ready(function(){
 
   // --------헤더 스크롤바 부드럽게
   $(window).scroll(function(){
-  let winTop = $(window).scrollTop()
-  if (winTop >= 400) {
-    $("header").addClass("sma")
-  }
-  else {
-    $("header").removeClass("sma")
-  }
+
+    let winTop = $(window).scrollTop();
+
+    if(winTop>=400){
+      $("header").addClass("sma")
+    }else{
+      $("header").removeClass("sma")
+    }
   })
 
   // -------전체 스크롤바 부드럽게
   $("main>div").on("wheel DOMMouseScroll", function (event) { 
     
-    let E = event.originalEvent
+    let E = event.originalEvent;
     let delta = 0;
 
     if (E.detail) {delta = E.detail * -40}
@@ -32,8 +33,23 @@ $(document).ready(function(){
       return false
   })
 
+  //--------큰글씨 좌우 재생 효과
+  $(window).scroll(function(){
+    let winst = $(window).scrollTop();
+    let winHeight = $(window).height()*0.75;
+
+      if(winst+winHeight>$(".mltr,.mrtl").offset().top){
+        $(".mltr,.mrtl").addClass("on")
+      }
+      else{
+        $(".mltr,.mrtl").removeClass("on")
+      }
+  })
+
+
   // -------베스트셀러 슬라이더 효과적용
     let bestNow = new Swiper('.bestNow', {
+
     loop: true,
     direction: 'horizontal',
     autoplay: {delay: 1000},
@@ -59,13 +75,11 @@ $(document).ready(function(){
     on: {
       slideChange: function () {
         console.log(bestNow.realIndex) 
-        $(".bestItem>li").removeClass("inActive");
+        $(".bestItem>li").removeClass("inActive")
         $(".bestItem>li").eq(bestNow.realIndex).addClass("inActive")
         $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
       }
     }
-    
-    
     })
 
   $(".bestNow").mouseover(function () { 
@@ -75,13 +89,18 @@ $(document).ready(function(){
     bestNow.autoplay.start()
   })
 
-    // TOP버튼
+  //------------모이스춰써지 슬라이더
+  $(".msBtn").click(function () {
+    if ($(".ms_intro>li").hasClass("on")==false)
+    {$(".ms_intro>li").addClass("on")}
+    else{$(".ms_intro>li").removeClass("on")}
+  })
+
+    // -------TOP버튼
   $(".btnTop").click(function () { 
     $("html, body")
       .animate({ scrollTop: 0 }, 1000)
   })
-
-  
 
 
 
