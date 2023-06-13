@@ -29,6 +29,27 @@
   font-style: normal;
 }
 
+/* 애니메이션 */
+@keyframes mrtlWord {
+  0% {
+    transform: translateX(90%)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes mltrWord {
+  0% {
+    transform: translateX(-50%)
+  }
+
+  100% {
+    transform: translateX(100%)
+  }
+}
+
 * {
   font-family: 'S-CoreDream5';
   font-size: 16px;
@@ -50,6 +71,50 @@ main>div {
   width: 300px;
   height: 50px;
 }
+
+/* .mrtl {
+  transform: translateX(50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mrtl.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mltr {
+  transform: translateX(-50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mltr.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mttb {
+  transform: translateY(-50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mttb.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mbtt {
+  transform: translateY(50px);
+  opacity: 0.1;
+  transition: all 0.5s ease 0s;
+}
+
+.mbtt.on {
+  transform: translateY(0);
+  opacity: 1;
+} */
 
 /* layout */
 /* --------header--------- */
@@ -230,25 +295,27 @@ nav>.gnb {
 
 /* --------layout - main - evenbetter-------- */
 .evenBetter {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .evenBetter>h1 {
-  font-size: 150px;
+  font-size: 170px;
   font-family: 'Meramoon';
-  transform: translateX(100%);
-  transition: all 8s ease 0s;
+  white-space: nowrap;
+  animation: mrtlWord 10s linear 0s infinite;
+  margin-top: 15px;
 }
 
-.evenBetter>.mrtl.on {
-  transform: translateX(0%);
+.evenProduct {
+  position: relative;
+  height: 75%;
 }
 
 .evenProduct>img {
   width: 18%;
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
   left: 3%;
   z-index: 1;
   transform: scale(1);
@@ -263,7 +330,7 @@ nav>.gnb {
   content: "";
   background: #eee;
   position: absolute;
-  bottom: 7%;
+  bottom: 0;
   left: 0;
   width: 300px;
   height: 200px;
@@ -305,9 +372,9 @@ nav>.gnb {
 
 .evenTexture>img {
   position: absolute;
-  bottom: 10%;
-  left: 19%;
-  width: 17%;
+  bottom: 7%;
+  left: 30%;
+  width: 13%;
   object-fit: cover;
   z-index: 1;
   transform: scale(1);
@@ -321,8 +388,8 @@ nav>.gnb {
 .evenModel>img {
   width: 600px;
   position: absolute;
-  bottom: 10%;
-  right: 0;
+  bottom: 5%;
+  right: 15%;
   transform: scale(1);
   transition: all 0.5s ease 0s;
 }
@@ -334,24 +401,22 @@ nav>.gnb {
 /* layout - main - surge */
 .surge {
   position: relative;
+  overflow: hidden;
 }
 
 .surge>h1 {
-  font-size: 150px;
+  font-size: 170px;
   font-family: 'Meramoon';
-  transform: translateX(-100%);
-  transition: all 8s ease 0s;
-}
-
-.surge>.mltr.on {
-  transform: translateX(0);
+  padding-top: 20px;
+  white-space: nowrap;
+  animation: mltrWord 10s linear 0s infinite;
 }
 
 .surgeModel img {
   width: 375px;
   position: absolute;
-  top: 200px;
-  right: 0;
+  top: 26%;
+  right: 16%;
 }
 
 .surgeModel:after {
@@ -360,13 +425,13 @@ nav>.gnb {
   width: 375px;
   height: 428px;
   position: absolute;
-  top: 189px;
-  right: 6px;
+  top: 24%;
+  right: 17%;
 }
 
 .surgeProduct img {
   width: 570px;
-  transform: translateY(18%);
+  transform: translate(62%, 10%);
 }
 
 .surgeProduct:after {
@@ -375,22 +440,22 @@ nav>.gnb {
   width: 570px;
   height: 540px;
   position: absolute;
-  top: 277px;
-  left: -10px;
+  top: 30%;
+  left: 18%;
 }
 
 .surgeTexture img {
   width: 350px;
   transform: rotate(-70deg);
   position: absolute;
-  top: 71px;
+  top: 12%;
   left: 48%;
 }
 
 .surgeText {
   position: absolute;
-  bottom: 120px;
-  right: 60px;
+  bottom: 12%;
+  right: 21%;
   line-height: 170%;
 }
 
@@ -412,9 +477,6 @@ nav>.gnb {
   width: 100%;
 }
 
-/* .bestItem .swiper-slide-active {
-  border: 1px solid red;
-} */
 .bestItem>li {
   transition: all 0.5s ease 0s;
   word-break: keep-all;
@@ -504,7 +566,7 @@ nav>.gnb {
 .review {
   position: relative;
   display: flex;
-  margin-top: 150px;
+  padding-top: 200px;
 }
 
 .reviewText>div {
@@ -535,7 +597,7 @@ span {
 
 .reviewSale>img {
   position: absolute;
-  top: 13%;
+  top: 20%;
   left: 47%;
 }
 
@@ -555,8 +617,12 @@ span {
   width: 100%;
   height: 1px;
   position: absolute;
-  top: 51px;
+  top: 14%;
   left: 0;
+}
+
+.profit {
+  padding-top: 100px;
 }
 
 .profit>h1 {
@@ -730,12 +796,12 @@ h3 {
 .brand-story3,
 .brand-story4,
 .brand-story5 {
-  height: 800px;
+  /* height: 1000px; */
 }
 
 .brand-story2>div {
   text-align: center;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 .bs_aloe {
@@ -784,6 +850,7 @@ h3 {
   position: absolute;
   top: 5%;
   left: 30%;
+  padding-top: 100px;
 }
 
 .brand-story3>div>h1 {
@@ -835,6 +902,7 @@ h3 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
+  padding-top: 100px;
 }
 
 .brand-story5 h4 {
@@ -948,6 +1016,7 @@ h3 {
 
 .moisture_surge2 {
   overflow: hidden;
+  position: relative;
 }
 
 .moisture_surge2>h1 {
@@ -973,13 +1042,16 @@ h3 {
 .msul {
   display: flex;
   margin-left: 300px;
-  position: relative;
+  border: 1px solid red;
 }
 
 .ms_intro {
+  border: 1px solid blue;
   width: 400px;
   height: 400px;
-  position: relative;
+  position: absolute;
+  top: 42%;
+  left: 16%;
 }
 
 .ms_intro>* {
@@ -1017,14 +1089,21 @@ h3 {
   margin-left: 400px;
 }
 
-.ms_img img {
+.ms_img>li {
+  border: 1px solid green;
   width: 400px;
+  height: 500px;
+}
+
+.ms_img img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .msBtn {
   position: absolute;
-  bottom: 40%;
-  right: 50%;
+  bottom: 32%;
+  right: 41%;
   border: 1px solid red;
   cursor: pointer;
 }

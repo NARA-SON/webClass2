@@ -33,20 +33,6 @@ $(document).ready(function(){
       return false
   })
 
-  //--------큰글씨 좌우 재생 효과
-  $(window).scroll(function(){
-    let winst = $(window).scrollTop();
-    let winHeight = $(window).height()*0.75;
-
-      if(winst+winHeight>$(".mltr,.mrtl").offset().top){
-        $(".mltr,.mrtl").addClass("on")
-      }
-      else{
-        $(".mltr,.mrtl").removeClass("on")
-      }
-  })
-
-
   // -------베스트셀러 슬라이더 효과적용
     let bestNow = new Swiper('.bestNow', {
 
@@ -78,7 +64,8 @@ $(document).ready(function(){
         $(".bestItem>li").removeClass("inActive")
         $(".bestItem>li").eq(bestNow.realIndex).addClass("inActive")
         $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
-      }
+      },
+      loop: true,
     }
     })
 
@@ -90,10 +77,20 @@ $(document).ready(function(){
   })
 
   //------------모이스춰써지 슬라이더
+  // $(".msBtn").click(function () {
+  //   if ($(".ms_intro>li").hasClass("on")==false)
+  //   {$(".ms_intro>li").addClass("on")}
+  //   else{$(".ms_intro>li").removeClass("on")}
+  // })
+
   $(".msBtn").click(function () {
-    if ($(".ms_intro>li").hasClass("on")==false)
-    {$(".ms_intro>li").addClass("on")}
-    else{$(".ms_intro>li").removeClass("on")}
+    
+    let msimg = $(".ms_img>li").length;
+    let count = 0;
+
+    if (count < msimg.length) {
+      $(".ms_img").css("transform", "translateX(-400px);")
+    }
   })
 
     // -------TOP버튼
