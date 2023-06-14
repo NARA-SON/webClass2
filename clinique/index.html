@@ -14,6 +14,7 @@
   <!-- 제이쿼리, 자바스크립트 연결 -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/bestSlider.js"></script>
 
   <!-- swiper연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -33,15 +34,15 @@
         <li><a href="#">크리니크 스토리</a>
           <div class="gnb2dep">
             <ul>
-              <li><a href="#">크리니크 스토리</a></li>
+              <li><a href="./index2.html" target="blank">크리니크 스토리</a></li>
             </ul>
           </div>
         </li>
         <li><a href="#">스킨케어</a>
           <div class="gnb2dep">
-            <p class="arrowBtn"><a href="#">스킨케어 메인</a></p>
+            <p class="arrowBtn"><a href="./index4.html" target="_blank">스킨케어 메인</a></p>
             <ul>
-              <li>제품유형
+              <li><a href="#">제품유형</a>
                 <ul>
                   <li><a href="#">모이스춰라이저</a></li>
                   <li><a href="#">클렌저&리무버</a></li>
@@ -53,7 +54,7 @@
                   <li><a href="#">자외선 차단</a></li>
                 </ul>
               </li>
-              <li>피부고민
+              <li><a href="#">피부고민</a>
                 <ul>
                   <li><a href="#">피부트러블</a></li>
                   <li><a href="#">피부 톤</a></li>
@@ -62,10 +63,10 @@
                   <li><a href="#">모공</a></li>
                 </ul>
               </li>
-              <li>남성케어
+              <li class="manCare"><a href="#">남성케어</a>
                 <ul>
                   <li><a href="#">그루밍가이드</a></li>
-                  <li>제품유형
+                  <li><a href="#">제품유형</a>
                     <ul>
                       <li><a href="#">토너</a></li>
                       <li><a href="#">모이스춰라이저</a></li>
@@ -73,7 +74,7 @@
                       <li><a href="#">향수</a></li>
                     </ul>
                   </li>
-                  <li>피부고민
+                  <li><a href="#">피부고민</a>
                     <ul>
                       <li><a href="#">피부 트러블</a></li>
                       <li><a href="#">오일 컨트롤</a></li>
@@ -88,7 +89,7 @@
           <div class="gnb2dep">
             <p class="arrowBtn"><a href="#">메이크업 메인</a></p>
             <ul>
-              <li>페이스
+              <li><a href="#">페이스</a>
                 <ul>
                   <li><a href="#">파운데이션</a></li>
                   <li><a href="#">블러쉬</a></li>
@@ -97,13 +98,13 @@
                   <li><a href="#">메이크업 리무버</a></li>
                 </ul>
               </li>
-              <li>립
+              <li><a href="#">립</a>
                 <ul>
                   <li><a href="#">립스틱</a></li>
                   <li><a href="#">립글로스</a></li>
                 </ul>
               </li>
-              <li>아이
+              <li><a href="#">아이</a>
                 <ul>
                   <li><a href="#">마스카라</a></li>
                   <li><a href="#">브로우</a></li>
@@ -112,7 +113,7 @@
                   <li><a href="#">메이크업 리무버</a></li>
                 </ul>
               </li>
-              <li>액세서리&브러쉬</li>
+              <li><a href="#">액세서리&브러쉬</a></li>
             </ul>
           </div>
         </li>
@@ -138,13 +139,18 @@
   <!-- main:page1 -->
   <main>
     <div class="videoBanner">
-      <video src="./video/evenbetter.mp4"></video>
+      <video control muted autoplay loop src="./video/evenbetter.mp4"></video>
       <!-- control muted autoplay loop -->
       <h1>GOOD-BYE MELANIN</h1>
     </div>
     <!-- main:page2 -->
     <div class="evenBetter">
-      <h1>EVEN BETTER CLINICAL</h1>
+      <div class="textWrap">
+        <ul>
+          <li class="a">EVEN BETTER CLINICAL</li>
+          <li class="b">EVEN BETTER CLINICAL</li>
+        </ul>
+      </div>
       <div class="evenProduct contents">
         <img src="./img/page2_evenbetter.png" alt="evenbetterclinical">
         <div class="evenText">
@@ -164,7 +170,12 @@
     </div>
     <!-- main:page3 -->
     <div class="surge">
-      <h1>moisture surge</h1>
+      <div class="textWrap">
+        <ul>
+          <li class="a">MOISTURE SURGE</li>
+          <li class="b">MOISTURE SURGE</li>
+        </ul>
+      </div>
       <div class="surgeProduct">
         <img src="./img/page3_surge.jpg" alt="써지제품">
       </div>
@@ -177,7 +188,7 @@
       <div class="surgeText">
         <p>더욱 촉촉하게, 크리니크 모이스춰라이저</p>
         <p>뛰어난 수분감으로 사랑받는 크리니크의 모이스춰라이저를 확인해보세요</p>
-        <p class="arrowBtn">전 체 보 기</p>
+        <p class="arrowBtn"><a href="./index3.html" target="_blank">전 체 보 기</a></p>
       </div>
     </div>
     <!-- main:page4 -->
@@ -317,10 +328,10 @@
           <a href="#">
             <h2>구 독 신 청</h2>
           </a>
-          <div>
-            <input type="checkbox" required id="user_Agree">
-            <span class="uA_ui"></span>
-            <label for="user_Agree">크리니크의 새로운 서비스, 신상품, 이벤트 정보 등<br> 마케팅 목적의 최신정보를 미리 받아보고 싶으시다면 선택해주세요.</label>
+          <div class="check_wrap">
+            <input type="checkbox" required id="check_btn">
+            <label for="check_btn"><span>크리니크의 새로운 서비스, 신상품, 이벤트 정보 등<br> 마케팅 목적의 최신정보를 미리 받아보고 싶으시다면
+                선택해주세요.</span></label>
           </div>
         </div>
       </div>

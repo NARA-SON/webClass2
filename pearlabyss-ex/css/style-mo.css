@@ -375,66 +375,66 @@
   }
 
   footer {
-    margin-top: 200px;
+    padding-top: 50px;
   }
 
   .footMenu1 {
     border-top: 1px solid #ebebeb;
-    padding-top: 70px;
-    margin-bottom: 50px;
+    padding-top: 30px;
   }
 
   .footMenu1>ul {
-    border: 1px solid red;
-    width: 1120px;
+    width: 90vw;
     margin: 0 auto;
-    display: flex;
   }
 
   .footMenu1>ul>li {
-    border: 1px solid blue;
-    width: calc(100%/6);
+    overflow: hidden;
+    height: 50px;
   }
 
   .footMenu1>ul>li>a {
     font-weight: bold;
     font-size: 1.12rem;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footMenu1>ul>li>a:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/icn_cm_plus.svg) no-repeat center center;
+    background-size: contain;
+    transition: all 0.5s ease 0s;
+  }
+
+  .footMenu1>ul>li.on>a:after {
+    transform: rotate(45deg);
   }
 
   .footMenu1>ul>li>ul {
-    margin-top: 18px;
-    border: 1px solid red;
     color: #9a9a9a;
     font-size: 1rem;
   }
 
   .footMenu1>ul>li>ul>li {
-    margin-bottom: 14px;
-  }
-
-  .footMenu1>ul>li>ul>li:hover {
-    color: #000;
-  }
-
-  .footMenu1>ul>li>ul>li:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .footMenu2 {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 75px;
+    height: 35px;
+    display: flex;
+    align-items: center;
   }
 
   .footMenu2>ul {
-    border: 1px solid blue;
-    width: 1120px;
+    width: 90vw;
     margin: 0 auto;
-    display: flex;
   }
 
   .footMenu2>ul>li {
-    border: 1px solid red;
-    width: calc(100%/6);
+    height: 50px;
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 1.12rem;
   }
@@ -444,51 +444,43 @@
   }
 
   .coInfo {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
     padding: 26px 0;
-  }
-
-  .coInfo:before {
-    content: "";
-    width: 138px;
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .footLogo {
-    display: flex;
-    border: 1px solid red;
-    align-items: center;
-  }
-
-  .copy {
-    color: #9a9a9a;
-    margin-left: 36px;
-  }
-
-  .snsMenu {
-    width: 138px;
-    border: 1px solid red;
-  }
-
-  .snsMenu>ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .snsMenu>ul>li {
-    border: 1px solid red;
-    width: 38px;
-  }
-
-  .snsMenu>ul>li img {
-    width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .footLogo img {
     width: 120px;
+  }
+
+  .copy {
+    color: #9a9a9a;
+  }
+
+  .snsMenu {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
+  }
+
+  .snsMenu>ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .snsMenu>ul>li {
+    width: 38px;
+    margin: 0 5px;
+  }
+
+  .snsMenu>ul>li img {
+    width: 100%;
   }
 }
