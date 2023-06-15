@@ -367,7 +367,7 @@ nav>.gnb {
 
 .evenBetter>.textWrap>ul>.b {
   animation: mrtlWord2 10s linear 5s infinite;
-  color: rgb(135, 235, 170);
+  color: rgb(254 214 250);
 }
 
 .evenProduct {
@@ -500,7 +500,7 @@ nav>.gnb {
   width: 375px;
   position: absolute;
   top: 26%;
-  right: 16%;
+  right: 18%;
 }
 
 .surgeModel:after {
@@ -510,7 +510,7 @@ nav>.gnb {
   height: 428px;
   position: absolute;
   top: 24%;
-  right: 17%;
+  right: 19%;
 }
 
 .surgeProduct img {
@@ -522,9 +522,9 @@ nav>.gnb {
   content: "";
   border: 1px solid #FFA785;
   width: 570px;
-  height: 540px;
+  height: 414px;
   position: absolute;
-  top: 28%;
+  top: 30%;
   left: 18%;
 }
 
@@ -532,8 +532,8 @@ nav>.gnb {
   width: 350px;
   transform: rotate(-70deg);
   position: absolute;
-  top: 12%;
-  left: 48%;
+  top: 19%;
+  left: 49%;
 }
 
 .surgeText {
@@ -737,6 +737,7 @@ main .swiper-button-next:after {
 .profit>h1 {
   font-size: 2rem;
   margin-bottom: 40px;
+  font-family: 'S-CoreDream7';
 }
 
 .profit>ul {
@@ -1171,14 +1172,14 @@ h3 {
 .totalStation {
   display: flex;
   margin-left: 300px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   min-width: 1200px;
   overflow: hidden;
 }
 
 /* 텍스트 기차역 */
 .Station1 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 400px;
   height: 400px;
 }
@@ -1232,7 +1233,7 @@ h3 {
 }
 
 .msImgTrain>li {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: calc(100%/5);
   height: 500px;
 }
@@ -1247,7 +1248,7 @@ h3 {
   position: absolute;
   bottom: 32%;
   right: 41%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   cursor: pointer;
 }
 
@@ -1296,7 +1297,7 @@ h3 {
 .step2ul,
 .step3ul {
   overflow: hidden;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   box-sizing: border-box;
   position: relative;
 }
@@ -1314,7 +1315,7 @@ h3 {
 .step3ul>ul {
   display: flex;
   margin-left: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 150px;
 }
 
@@ -1322,7 +1323,7 @@ h3 {
 .step2ul>ul>li,
 .step3ul>ul>li {
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .step1_text,
@@ -1330,7 +1331,7 @@ h3 {
 .step3_text {
   width: 400px;
   height: 300px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   transform: translate(-20%, 100%);
 }
 
