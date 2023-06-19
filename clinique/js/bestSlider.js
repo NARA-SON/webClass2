@@ -6,6 +6,7 @@ $(document).ready(function () {
     direction: 'horizontal',
     autoplay: {delay: 1000},
     speed: 1000,
+    // centeredSlides: true,
     breakpoints: {
       320: {
         slidesPerView:1,
@@ -26,12 +27,13 @@ $(document).ready(function () {
       },
     on: {
       slideChange: function () {
-        console.log(bestNow.realIndex) 
+        console.log(this.activeIndex) 
         $(".bestItem>li").removeClass("inActive")
-        $(".bestItem>li").eq(bestNow.realIndex).addClass("inActive")
-        $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
+        $(".bestItem>li").eq(this.activeIndex).addClass("inActive")
+        $(".bestItem>li").eq(this.activeIndex+4).addClass("inActive")
+        // $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
       },
-      loop: true,
+      
     }
     })
 

@@ -1,0 +1,11 @@
+@keyframes introAni {
+  0% {
+    opacity: 0.1;
+    transform: translate(-10px, -10px) rotateX(-90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px) rotateX(0deg);
+  }
+}

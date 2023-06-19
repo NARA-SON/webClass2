@@ -1233,7 +1233,7 @@ h3 {
 }
 
 .msImgTrain>li {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   width: calc(100%/5);
   height: 500px;
 }
