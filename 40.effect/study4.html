@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/study4.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./js/study4.js"></script>
+  <title>Slide-wheel</title>
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/b09d8fd2ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <ul class="snsMenu">
+      <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+    </ul>
+    <h1 class="logo"><a href="#"><img src="./img/logo.png" alt="로고"></a></h1>
+  </header>
+  <ul class="stationMenu">
+    <li><a href="#">artwork 01~</a></li>
+    <li><a href="#">artwork 06~</a></li>
+    <li><a href="#">artwork 11~</a></li>
+    <li><a href="#">artwork 16~</a></li>
+  </ul>
+  <div class="station">
+    <ul class="train">
+      <li>
+        <img class="small" src="./img/s1.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic1.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <!-- <li>
+        <img class="small" src="./img/s2.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic2.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s3.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic3.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s4.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic4.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s5.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic5.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s6.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic6.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+
+      <li>
+        <img class="small" src="./img/s7.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic7.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s8.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic8.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s9.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic9.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s10.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic10.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s11.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic11.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s12.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic12.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s13.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic13.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s14.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic14.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s15.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic15.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s16.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic16.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s17.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic17.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s18.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic18.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s19.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic19.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li>
+      <li>
+        <img class="small" src="./img/s20.jpg" alt="작은이미지1">
+        <img class="big" src="./img/pic20.jpg" alt="큰이미지1">
+        <h2 class="title">Artwork 01</h2>
+        <p>Artwork description comes here.<br>2023.06.20</p>
+        <span class="btnClose">Close</span>
+      </li> -->
+    </ul>
+  </div>
+</body>
+
+</html>

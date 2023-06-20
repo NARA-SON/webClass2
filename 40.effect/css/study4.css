@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+.snsMenu {
+  display: flex;
+}
+
+.snsMenu>li {
+  margin: 0 20px;
+}
+
+.snsMenu i {
+  font-size: 50px;
+}
+
+.stationMenu {
+  display: flex;
+  padding: 50px 50px;
+}
