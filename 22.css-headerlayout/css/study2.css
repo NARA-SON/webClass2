@@ -1,4 +1,3 @@
-/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +22,6 @@ header {
   width: 200px;
   height: 100%;
   transition: all 0.5s ease 0s;
-  /* 원래작업한 gnb대신 아래 세줄과 헤더에프터 넣기 */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,23 +29,28 @@ header {
 
 header:after {
   content: "";
+  border: 1px solid red;
   height: 50px;
 }
-
-/* 여기까지 */
 
 header:hover {
   width: 300px;
 }
 
-/* .gnb {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  box-sizing: border-box;
+header>h1 {}
+
+/* .gnb{
+    border:10px solid red;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    box-sizing: border-box;
 } */
+.gnb {
+  /* border:10px solid red; */
+}
 
 .gnb>li {
   height: 50px;
@@ -82,6 +85,7 @@ header:hover {
   align-items: center;
   padding-left: 60px;
 }
+
 
 .container {
   width: calc(100% - 200px);
