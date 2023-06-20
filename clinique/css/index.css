@@ -1158,7 +1158,7 @@ h3 {
 .moisture_surge2>p {
   color: #4D4D4D;
   margin-left: 300px;
-  margin-top: 50px;
+  margin-top: 10px;
   line-height: 150%;
 }
 
@@ -1188,6 +1188,7 @@ h3 {
 .Station2 {
   width: calc(100% - 400px);
   overflow: hidden;
+  border: 1px solid red;
 }
 
 /* 텍스트 기차 */
@@ -1200,10 +1201,11 @@ h3 {
 /* 텍스트 리스트 */
 .msTxTrain>li {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   opacity: 0;
   transition: all 0.5s ease 0s;
+  word-break: keep-all;
 }
 
 /* 텍스트 리스트에 클래스가 붙으면 */
@@ -1222,19 +1224,21 @@ h3 {
   line-height: 180%;
 }
 
-.msTxTrain>li>p>span {
+.msTxTrain span {
   color: #22D3D6;
 }
 
 .msImgTrain {
   display: flex;
-  width: calc(500%/3);
+  width: calc(1200%/3);
+  /* 미리 2개 줄지어놓음 */
+  transform: translateX(-16.666%);
   transition: all 0.7s ease 0s;
 }
 
 .msImgTrain>li {
   border: 1px solid green;
-  width: calc(100%/5);
+  width: calc(100%/12);
   height: 500px;
 }
 

@@ -30,8 +30,7 @@ $(document).ready(function () {
         console.log(this.activeIndex) 
         $(".bestItem>li").removeClass("inActive")
         $(".bestItem>li").eq(this.activeIndex).addClass("inActive")
-        $(".bestItem>li").eq(this.activeIndex+4).addClass("inActive")
-        // $(".bestItem>li").eq(bestNow.realIndex+4).addClass("inActive")
+        $(".bestItem>li").eq(this.activeIndex + 4).addClass("inActive")
       },
       
     }
