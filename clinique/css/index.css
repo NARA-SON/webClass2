@@ -1230,15 +1230,15 @@ h3 {
 
 .msImgTrain {
   display: flex;
-  width: calc(1200%/3);
+  width: calc(1100%/3);
   /* 미리 2개 줄지어놓음 */
-  transform: translateX(-16.666%);
+
   transition: all 0.7s ease 0s;
 }
 
 .msImgTrain>li {
   border: 1px solid green;
-  width: calc(100%/12);
+  width: calc(100%/11);
   height: 500px;
 }
 
