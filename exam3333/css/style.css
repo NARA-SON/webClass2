@@ -1,0 +1,249 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* layout */
+.wrap {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: lightcoral;
+  display: flex;
+}
+
+header {
+  background: green;
+  width: 200px;
+}
+
+.con {
+  background: lightcyan;
+  width: 400px;
+}
+
+.station {
+  background: lightgreen;
+  width: calc(100% - 600px);
+}
+
+footer {
+  height: 120px;
+  background: black;
+  color: #fff;
+}
+
+/* header */
+.logo {
+  border: 1px solid red;
+  margin-bottom: 50px;
+}
+
+.gnb {
+  border: 1px solid blue;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.gnb>li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.gnb>li ul {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  border: 1px solid blue;
+  width: 150px;
+  background: lightpink;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gnb>li:hover ul {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* .gnb>li:hover {
+  background: black;
+  color: #fff;
+}
+
+.gnb>li>ul>li:hover {
+  background: black;
+  color: #fff;
+} */
+
+.gnb li:hover {
+  background: black;
+  color: #fff;
+}
+
+
+.gnb>li ul>li {
+  height: 50px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  line-height: 50px;
+}
+
+.banner {
+  background: lightgoldenrodyellow;
+  height: 150px;
+}
+
+.notice {
+  background: ivory;
+  padding: 10px 0;
+}
+
+.notice>h3 {
+  margin-bottom: 10px;
+}
+
+.noticeList>li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.galler {
+  background: lightslategray;
+  padding: 10px 0;
+
+}
+
+.galList {
+  border: 1px solid red;
+  display: flex;
+}
+
+.galList>li {
+  border: 1px solid blue;
+}
+
+.snsLink {}
+
+.snsLink>ul {
+  display: flex;
+}
+
+.snsLink>ul>li {
+  border: 1px solid black;
+  flex: 1;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.con>div {
+  height: 25%;
+}
+
+.station {
+  overflow: hidden;
+}
+
+.train {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  transition: all 0.7s ease 0s;
+}
+
+.train>li {
+  flex: 1;
+}
+
+.train>li:nth-of-type(1) {
+  background: red;
+}
+
+.train>li:nth-of-type(2) {
+  background: green;
+}
+
+.train>li:nth-of-type(3) {
+  background: blue;
+}
+
+footer {
+  display: flex;
+}
+
+footer>h1 {
+  border: 1px solid lime;
+  width: 200px;
+  height: 100%;
+}
+
+.footCon {
+  width: calc(100% - 400px);
+  background: darkorchid;
+}
+
+.footMenu {
+  display: flex;
+  border: 1px solid red;
+  padding: 10px 20px;
+}
+
+.footMenu>li {
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+}
+
+.footMenu>li:last-of-type {
+  border-right: none;
+}
+
+.fam {
+  width: 200px;
+  height: 100%;
+  background: gold;
+}
+
+.blackcover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: none;
+}
+
+.blackcover.on {
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  background: #fff;
+  width: 300px;
+  z-index: 100;
+  padding: 20px;
+}

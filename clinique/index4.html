@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinique 3-step</title>
 
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/b09d8fd2ad.js" crossorigin="anonymous"></script>
+
   <!-- css연결 -->
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/reset.css">
@@ -14,6 +17,7 @@
   <!-- 제이쿼리, 자바스크립트 연결 -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/sliderStep.js"></script>
 </head>
 
 <body>
@@ -144,16 +148,18 @@
       </div>
     </div>
     <!-- 3-step page(2)-->
-    <div class="step1ul">
-      <h1><img src="./img/step/step1cl.png" alt="1.세안"></h1>
-      <ul class="step1_img">
-        <li><img src="./img/step/step1_aac.png" alt="step1_aac"></li>
+    <div class="sp1Station">
+      <div class="sp1Title">
+        <img src="./img/step/step1cl.png" alt="1.세안">
+      </div>
+      <ul class="sp1ImgTrain">
+        <li class="on"><img src="./img/step/step1_aac.png" alt="step1_aac"></li>
         <li><img src="./img/step/step1_aacf.png" alt="step1_aacf"></li>
         <li><img src="./img/step/step1_aaca.png" alt="step1_aaca"></li>
         <li><img src="./img/step/step1_aacl.png" alt="step1_aacl"></li>
       </ul>
-      <ul class="step1_text">
-        <li>
+      <ul class="sp1TxTrain">
+        <li class="on">
           <h4>올 어바웃 클린 린스-오프 포밍 클렌저</h4>
           <p>메이크업과 자외선 차단제를 말끔하게 지워주는<br>
             부드러운 무스 타입의 포밍 클렌저.<br>
@@ -163,18 +169,17 @@
         <li>
           <h4>올 어바웃 클린 포밍 페이셜 솝</h4>
           <p>효과적으로 노폐물과 과잉 피지를 씻어내주는<br>
-            세안용 젤 타입 포밍 클렌저.
+            세안용 젤 타입 포밍 클렌저.<br>
             소닉 퓨리파잉 클렌징 브러쉬와 함께 사용되어<br>
-            피부의 피지, 먼지, 노폐물 등을 더욱 말끔히 제거하도록<br>특별히 개발된 부드러운 포밍 페이셜 솝입니다.</p>
+            피부의 피지, 먼지, 노폐물 등을 더욱 말끔히 제거하도록 특별히 개발된 부드러운 포밍 페이셜 솝입니다.</p>
         </li>
         <li>
           <h4>올 어바웃 클린 리퀴드 페이셜 솝 (마일드/오일리)</h4>
-          <p>효과적으로 노폐물과 과잉 피지를 씻어내주는 리퀴드 타입 세안용 클렌저.
-
-            피부의 더러움과 노폐물을 자극 없이 씻어내지만, 피부 보습막은 지켜 주어 세안으로 인한 건조함을 줄여주는 제품입니다.
-            피부 표면의 각질을 부드럽게 하여 다음 단계에서 각질이 효과적으로 제거될 수 있도록 도와 줍니다.
-
-            *지복합성/지성 제품은 멘톨 성분이 들어 있어 시원한 사용감을 느끼실 수 있습니다.</p>
+          <p>효과적으로 노폐물과 과잉 피지를 씻어내주는 리퀴드 타입 세안용 클렌저.<br>
+            피부의 더러움과 노폐물을 자극 없이 씻어내지만,<br> 피부 보습막은 지켜 주어 세안으로 인한 건조함을 줄여주는 제품입니다.
+            <br>피부 표면의 각질을 부드럽게 하여 다음 단계에서 각질이 효과적으로 제거될 수 있도록 도와 줍니다.
+            <br>*지복합성/지성 제품은 멘톨 성분이 들어 있어 시원한 사용감을 느끼실 수 있습니다.
+          </p>
         </li>
         <li>
           <h4>올 어바웃 클린 올인원 클렌징 미셀라 밀크 + 메이크업 리무버</h4>
@@ -184,7 +189,7 @@
             거품을 일으키지 않는 부드러운 밀키 텍스처로 물로 헹구거나 물 없이 티슈로 닦아 사용할 수 있습니다.</p>
         </li>
       </ul>
-      <div class="btn_step1"></div>
+      <div class="sp1Btn"><i class="fa-solid fa-chevron-right"></i></div>
     </div>
     <!-- 3-step page(3)-->
     <div class="step2ul">
