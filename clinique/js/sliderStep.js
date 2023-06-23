@@ -14,7 +14,7 @@ $(document).ready(function () {
     // console.log(count)
     if (count == 4) {
       count = 0
-       $(".sp1ImgTrain li").eq(4).addClass("on")
+      $(".sp1ImgTrain li").eq(4).addClass("on")
     // 0.7초 후에 이동을 멈추고 0번째로 이동한다.
     setTimeout(function () {
       turnOffTransition()

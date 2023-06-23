@@ -1326,24 +1326,20 @@ h3 {
   height: 500px;
   transition: all 0.7s ease 0s;
   padding-right: 0px;
+  opacity: 0.7;
 }
 
 .sp1ImgTrain>li.on {
   padding-right: 400px;
   width: 400px;
   height: 700px;
+  opacity: 1;
 }
 
 .sp1ImgTrain>li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.7;
-}
-
-.sp1ImgTrain>li.on img {
-  margin-right: 400px;
-  opacity: 1;
 }
 
 .sp1TxTrain {
@@ -1387,63 +1383,6 @@ h3 {
   font-size: 4rem;
   color: #9e9e9e;
 }
-
-/* .step1ul,
-.step2ul,
-.step3ul {
-  overflow: hidden;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.step1ul>h1>img,
-.step2ul>h1>img,
-.step3ul>h1>img {
-  position: absolute;
-  top: 8%;
-  left: 20%;
-}
-
-.step1ul>ul,
-.step2ul>ul,
-.step3ul>ul {
-  display: flex;
-  margin-left: 200px;
-  margin-top: 150px;
-}
-
-.step1ul>ul>li,
-.step2ul>ul>li,
-.step3ul>ul>li {
-  display: flex;
-}
-
-.step1_text,
-.step2_text,
-.step3_text {
-  width: 400px;
-  height: 300px;
-  transform: translate(-20%, 100%);
-}
-
-.step1_text>h4,
-.step2_text>h4,
-.step3_text>h4 {
-  font-size: 20px;
-  margin-bottom: 30px;
-  font-family: 'S-CoreDream7';
-}
-
-.step1_text>p,
-.step2_text>p,
-.step3_text>p {
-  line-height: 180%;
-  word-break: keep-all;
-} */
-
-/* .step1ul {
-  background: url(../img/step/step1.png) no-repeat 20% 0;
-} */
 
 /* 3STEP - page(3)*/
 /* 3STEP - page(4)*/
