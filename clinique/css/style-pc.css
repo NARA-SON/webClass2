@@ -185,6 +185,7 @@ header.sma:hover {
 }
 
 /* 메인로고 크기조절 */
+.mobileLogo{display:none;}
 .mainLogo {
   width: 150px;
 }
@@ -1326,17 +1327,17 @@ h3 {
   border: 1px solid blue;
   width: 280px;
   height: 500px;
-  transition: all 0.7s ease 0s;
   padding-right: 0px;
   opacity: 0.7;
+  transition: all 0.7s ease 0s;
 }
 
-/* .sp1ImgTrain>li.on {
+.sp1ImgTrain>li.on {
   padding-right: 400px;
   width: 400px;
   height: 700px;
   opacity: 1;
-} */
+}
 
 .sp1ImgTrain>li img {
   width: 100%;

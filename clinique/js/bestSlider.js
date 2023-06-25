@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     loop: true,
     direction: 'horizontal',
-    autoplay: {delay: 1000},
+    autoplay: {delay: 3000},
     speed: 1000,
     // centeredSlides: true,
     breakpoints: {
