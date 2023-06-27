@@ -1384,7 +1384,7 @@
   }
 
   .sp1Txt {
-    border: 10px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     width: 400px;
     height: 500px;
@@ -1483,7 +1483,7 @@
   }
 
   .sp2Txt {
-    border: 10px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     width: 400px;
     height: 500px;
@@ -1582,7 +1582,7 @@
   }
 
   .sp3Txt {
-    border: 10px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     width: 400px;
     height: 500px;
