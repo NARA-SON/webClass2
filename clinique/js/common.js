@@ -12,6 +12,15 @@ $(document).ready(function(){
     }
   })
 
+  // --------헤더 호버 제어시킴
+    $(".gnb").mouseover(function(){
+    $("header").addClass("on")
+  })
+
+  $(".gnb").mouseout(function(){
+    $("header").removeClass("on")
+  })
+
   // -------전체 스크롤바 부드럽게
   $("main>div").on("wheel DOMMouseScroll", function (event) { 
     

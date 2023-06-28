@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  let count = 0;
+
 $(".sp3ImgTrain > li").eq(0).clone().appendTo(".sp3ImgTrain");
   $(".sp3ImgTrain > li").eq(1).clone().appendTo(".sp3ImgTrain");
   $(".sp3ImgTrain > li").eq(2).clone().appendTo(".sp3ImgTrain");

@@ -72,3 +72,13 @@ ol {
   padding: 10px;
   border: 1px solid red;
 }
+
+.wrap {
+  height: 2000px;
+  background: #888;
+}
+
+.box {
+  height: 1000px;
+  background: #555;
+}

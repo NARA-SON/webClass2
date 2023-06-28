@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro figure {
+  width: 1000px;
+}
+
+#introtxt path {
+  fill: transparent;
+  stroke: #000;
+}
+
+#introtxt.on path {
+  stroke-dashoffset: 0 !important;
+  fill: green;
+}
