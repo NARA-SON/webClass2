@@ -11,15 +11,16 @@
 }
 
 .intro figure {
-  width: 1000px;
+  width: 1600px;
 }
 
 #introtxt path {
   fill: transparent;
-  stroke: #000;
+  stroke: black;
+  /* transition:width 1s ease 0s,height 1s ease 1s; */
 }
 
 #introtxt.on path {
   stroke-dashoffset: 0 !important;
-  fill: green;
+  fill: red;
 }

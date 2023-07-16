@@ -9,14 +9,14 @@ ol {
 }
 
 .skill {
-
   width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 
-.skill>li {
+/* skill 클래스(ul)의 너비를 정해주고 플렉스했다. */
 
+.skill>li {
   flex: 1;
   margin-right: 10px;
 }
@@ -26,18 +26,15 @@ ol {
 }
 
 .skill>li h2 {
-
   text-align: center;
   margin-bottom: 10px;
 }
 
 .skill>li p {
-
   text-align: center;
 }
 
 .skill>li>figure {
-
   position: relative;
 }
 
@@ -48,9 +45,13 @@ ol {
   transform: translate(-50%, -50%);
 }
 
+/* 점수는 포지션으로 띄워줌 */
+
 .skill>li svg {
   transform: rotate(-90deg);
 }
+
+/* skill클래스 li 안에 svg태그는 90도 회전시켰다. */
 
 .skill>li circle {
   fill: none;
@@ -60,9 +61,12 @@ ol {
   /* transition:all 0.5s ease 0s; */
 }
 
+/* skill클래스 1i안에 circle 태그는 디자인을 정해주었다. */
+
 /* .skill > li:hover circle{
     stroke-dashoffset: 0;
 } */
+
 .per {
   font-size: 30px;
 }
